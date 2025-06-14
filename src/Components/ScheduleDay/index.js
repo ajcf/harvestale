@@ -1,17 +1,17 @@
-import { List, ListItem, Grid } from '@mui/material';
+import Grid from '@mui/material/Grid';
 import ScheduleItem from '../ScheduleItem';
 
 const ScheduleDay = (props) => (
-    <ListItem className={`schedule-day`}>
-        <Grid container>
-            <Grid size="6" className="schedule-day-label">
+    <Grid container className={`schedule-day`}>
+        <Grid container spacing={2} xs={12}>
+            <Grid item xs={8} className="schedule-day-label">
                 <div>{props.day}</div>
             </Grid>
-            <Grid size="6" className="schedule-date">
+            {/* <Grid item xs={6} className="schedule-date">
                 <div>{props.date}</div>
-            </Grid>
+            </Grid> */}
         </Grid>
-        <List className="schedule-day-items">
+        <Grid container className="schedule-day-items" spacing={2}>
             {props.events.map((child) => (
                 <ScheduleItem
                    key={child.label + "-" + child.time}
@@ -21,8 +21,8 @@ const ScheduleDay = (props) => (
                    description={child.description }
                 />
             )) }
-        </List>
-    </ListItem>
+        </Grid>
+    </Grid>
 );
 
 export default ScheduleDay;

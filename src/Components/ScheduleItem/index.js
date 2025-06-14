@@ -1,25 +1,20 @@
-import ListItem from "@mui/material/ListItem";
+
+import Grid from '@mui/material/Grid';
 
 const ScheduleItem = (props) => (
-    <ListItem className={`schedule-item schedule-item-${props.side}`}>
-        <div>
-            <div className="schedule-label">
-                {props.label}
-            </div>
-            <div className="schedule-time">
+    <Grid item className="schedule-item" xs={12}>
+        <Grid container spacing={2}>
+            <Grid item xs={6} className="schedule-time">
                 {props.time}
-            </div>
-        </div>
-        <div className="schedule-item-divider"></div>
-        <div>
-            <div className="schedule-location">
-                {props.location}
-            </div>
-            {/* <div className="schedule-description">
+            </Grid>
+            <Grid item xs={6} className="schedule-label">
+                {props.label}
+            </Grid>
+            {props.description && <Grid item xs={12}>
                 {props.description}
-            </div> */}
-        </div>
-    </ListItem>
+            </Grid>}
+        </Grid>
+    </Grid>
 );
 
 export default ScheduleItem;

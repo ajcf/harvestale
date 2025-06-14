@@ -12,14 +12,16 @@ import './css/style.css';
 import NotFound from './NotFound';
 import FAQ from './FAQ';
 import Schedule from './Schedule';
+import Information from './Information';
 
 function App() {
     return (
         <BrowserRouter>
             <ThemeProvider theme={theme}>
                 <Switch>
-                    <Route path="/" component={Schedule} exact />
+                    <Route path="/" component={Information} exact />
                     <Route path ="/schedule" component={Schedule} />
+                    <Route path ="/information" component={Information} />
                     <Route path ="/faq" component={FAQ} />
                     <Route path="/404" component={NotFound} />
                     <Redirect to='/404' />

@@ -5,6 +5,7 @@ import { withStyles } from "@material-ui/core/styles";
 import ButtonAppBarCollapse from "./ButtonBarCollapse";
 
 import ScheduleSharpIcon from "@mui/icons-material/ScheduleSharp";
+import InfoOutlined from "@mui/icons-material/InfoOutlined";
 import HelpOutline from "@mui/icons-material/HelpOutline";
 
 const styles = (theme) => ({
@@ -29,7 +30,7 @@ const styles = (theme) => ({
     display: "flex",
     flexDirection: "row",
     justifyContent: "space-around",
-    borderBottom: "solid 1px #ff855c",
+    borderBottom: "solid 1px goldenrod",
   },
   btn: {
     marginLeft: theme.spacing(1),
@@ -75,7 +76,8 @@ class ResponsiveNav extends Component {
       <Fragment>
         {[
           this.getButton("/schedule", "Schedule", <ScheduleSharpIcon />),
-          this.getButton("/faq", "General Information", <HelpOutline />),
+          this.getButton("/information", "General Information", <InfoOutlined />),
+          this.getButton("/faq", "FAQ", <HelpOutline />),
         ]}
       </Fragment>
     );
