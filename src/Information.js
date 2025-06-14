@@ -1,4 +1,4 @@
-import { Box, Link } from "@mui/material";
+import { Box } from "@mui/material";
 import { ReadableAppPage } from "./Components/AppPage";
 
 const Information = () => (
@@ -6,9 +6,8 @@ const Information = () => (
     includeHeader
     currentPage="General Information">
     <Box>
-      We're pleaed to present the Harvest Ale in the beautiful Western Mass.
-      For two and a half days, we invite you to dance with us around Franklin County, then retire to camp to 
-      enjoy local food and sing all night. 
+      We're pleased to present the Harvest Ale in the beautiful Western Massachusetts.
+      Here you will find details about the Ale and, hopefully, answers to all of your quesitons.
     </Box>
     <Box className="question">
       Registration and Payment
