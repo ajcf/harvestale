@@ -1,4 +1,4 @@
-import { Box } from "@mui/material";
+import { Box, Button } from "@mui/material";
 import { ReadableAppPage } from "./Components/AppPage";
 
 const Information = () => (
@@ -6,7 +6,7 @@ const Information = () => (
     includeHeader
     currentPage="General Information">
     <Box>
-      We're pleased to present the Harvest Ale in the beautiful Western Massachusetts.
+      We're pleased to once again present the Harvest Ale in beautiful Western Massachusetts.
       Here you will find details about the Ale and, hopefully, answers to all of your quesitons.
     </Box>
     <Box className="question">
@@ -14,12 +14,15 @@ const Information = () => (
     </Box>
     <Box>
       <p>
-        Please register by filling out <a href="https://forms.gle/kXYcLhThyUCgtW2p8">the registration form</a>.
+        <a href="https://forms.gle/kXYcLhThyUCgtW2p8"><Button>Register Here</Button></a>
+      </p>
+      <p>
+        Please register by filling out the registration form above.
         Each person attending should fill out the form separately, even guests.
       </p>
       <p>
         The Ale fee this year is $150. We ask that each team coordinate Payment
-        and send a single check to Dale Gardner-Fox. (todo: dale's contact info). 
+        and send a single check to Dale Gardner-Fox. (todo: ok to put Dale's contact info here?). 
       </p>
     </Box>
     <Box className="question">
@@ -27,7 +30,7 @@ const Information = () => (
     </Box>
     <Box>
       <p>
-      We are fortunate to be able to rent Camp Apex again this year. We have access to the Sitterly
+      We will be at Camp Apex again this year. We have access to the Sitterly
 Lodge, the Davenport Pavilion. the bath house, the campgrounds, and the pavilions. The three
 cabins located near the parking lot and the swimming pool are off-limits.
       </p>
