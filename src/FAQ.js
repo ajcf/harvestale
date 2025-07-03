@@ -8,8 +8,15 @@ const FAQ = () => (
     <Box>
       <Box>
         <Question
-          question="Placeholder question?"
-          answer="here is the answer"
+          question="Where is the Ale?"
+          answer={<p>It's at Camp Apex, on Rt 2 just west of Greenfield, MA.</p>}
+        />
+        <Question
+          question="What's the deal with food and lodging?"
+          answer={<p>Ale attendees are invited to bring tents and camp at Camp Apex.
+            If this is a challenge for you, let us know on the registration form and we'll help make other arrangements.
+            <br/><br/>
+            All meals are provided during the weekend, so please also let us know about any dietary restirctions.</p>}
         />
       </Box>
     </Box>

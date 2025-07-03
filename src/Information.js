@@ -1,4 +1,4 @@
-import { Box, Button } from "@mui/material";
+import { Box } from "@mui/material";
 import { ReadableAppPage } from "./Components/AppPage";
 
 const Information = () => (
@@ -6,15 +6,15 @@ const Information = () => (
     includeHeader
     currentPage="General Information">
     <Box>
-      We're pleased to once again present the Harvest Ale in beautiful Western Massachusetts.
-      Here you will find details about the Ale and, hopefully, answers to all of your quesitons.
+      The Harvest Ale is happening again! We're so excited to invite you back to Camp Apex to sing, dance, and feast with us!
+      This year, we have a website which will hopefully help answer your questions and promote general confidence throughout the weekend.
     </Box>
     <Box className="question">
       Registration and Payment
     </Box>
     <Box>
       <p>
-        <a href="https://forms.gle/kXYcLhThyUCgtW2p8"><Button>Register Here</Button></a>
+        <a href="https://forms.gle/kXYcLhThyUCgtW2p8">Register Here</a>
       </p>
       <p>
         Please register by filling out the registration form above.

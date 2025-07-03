@@ -10,9 +10,11 @@ const ScheduleItem = (props) => (
             <Grid item xs={6} className="schedule-label">
                 {props.label}
             </Grid>
-            {props.description && <Grid item xs={12}>
-                {props.description}
-            </Grid>}
+            {props.description &&
+                <Grid item xs={12} className="schedule-description">
+                    {props.description}
+                </Grid>
+            }
         </Grid>
     </Grid>
 );

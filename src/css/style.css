@@ -287,6 +287,10 @@ body:has(.not_home) {
   text-align: center;
 }
 
+.schedule-description {
+  padding-bottom: 1rem !important;
+}
+
 .schedule-item .MuiGrid-item.schedule-time {
   text-align: right;
 }
