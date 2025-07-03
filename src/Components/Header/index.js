@@ -4,10 +4,11 @@ import ResponsiveNav from "./ResponsiveNav";
 
 const Header = (props) => (
   <div className="header">
+    <ResponsiveNav currentPage={props.currentPage} />
     <RouterLink to="/" className="header-logo logo-with-shadow">
       The Harvest Ale
     </RouterLink>
-    <ResponsiveNav currentPage={props.currentPage} />
+    
   </div>
 );
 export default Header;
