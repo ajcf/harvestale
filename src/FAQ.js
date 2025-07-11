@@ -16,7 +16,7 @@ const FAQ = () => (
           answer={<p>Ale attendees are invited to bring tents and camp at Camp Apex.
             If this is a challenge for you, let us know on the registration form and we'll help make other arrangements.
             <br/><br/>
-            All meals are provided during the weekend, so please also let us know about any dietary restirctions.</p>}
+            All meals are provided during the weekend, so please also let us know about any dietary restrictions.</p>}
         />
       </Box>
     </Box>

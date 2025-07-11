@@ -21,8 +21,8 @@ const Information = () => (
         Each person attending should fill out the form separately, even guests.
       </p>
       <p>
-        The Ale fee this year is $150. We ask that each team coordinate Payment
-        and send a single check to Dale Gardner-Fox. (todo: ok to put Dale's contact info here?). 
+        The Ale fee this year is $150 for the full weekend, or $45 for guests only attending the feast. We ask that each team coordinate payment
+        and send a single check. Squires will get an email with details about how to send payment.
       </p>
     </Box>
     <Box className="question">
@@ -46,10 +46,7 @@ cabins located near the parking lot and the swimming pool are off-limits.
         The Legal Drinking Age in Massachusetts is 21. Any underage participant found consuming alcohol will be asked to leave the event.
       </p>
       <p>
-        Smoking is prohibited on YMCA property.  The Legal Tobacco Smoking Age in Massachusetts is 21. Any underage participant found consuming tobacco will be asked to leave the event.
-      </p>
-      <p>
-        Same goes for cannabis.
+        Smoking tobacco, cannabis or anything else is prohibited at Camp Apex. Please do not indulge on YMCA property.
       </p>
     </Box>
   </ReadableAppPage>
