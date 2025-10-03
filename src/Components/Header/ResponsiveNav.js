@@ -76,7 +76,7 @@ class ResponsiveNav extends Component {
       <Fragment>
         {[
           this.getButton("/schedule", "Schedule", <ScheduleSharpIcon />),
-          this.getButton("/information", "General Information", <InfoOutlined />),
+          this.getButton("/information", "Participant Information", <InfoOutlined />),
           this.getButton("/faq", "FAQ", <HelpOutline />),
         ]}
       </Fragment>

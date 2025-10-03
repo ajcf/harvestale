@@ -11,3 +11,7 @@ export default function NotFound(props) {
     );
 }
 
+// tour directions when ready
+// header image from Alan
+// list of what to bring
+// google sheets to Dale and Heidi
