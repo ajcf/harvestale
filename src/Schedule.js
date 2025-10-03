@@ -72,7 +72,7 @@ const Schedule = () => (
           { time: "9a", label: "Squires Meeting" },
           { time: "9:45a", label: "Leave Camp"},
           { time: "10:30a", label: <a href="https://maps.app.goo.gl/Rgjn7aQFCnyzD2CfA">Three Sisters Sanctuary</a>},
-          { time: "11:50", label: <a href="https://maps.app.goo.gl/E1ysuuaSgDDzQhpA9">Trolley Museum</a>, description:
+          { time: "11:45a", label: <a href="https://maps.app.goo.gl/E1ysuuaSgDDzQhpA9">Trolley Museum</a>, description:
           <Grid container>
             <Grid item xs={12} sm={6} className="detail">
               Jugger Meadow
