@@ -6,7 +6,7 @@ import {
     Redirect,
     Switch
 } from "react-router-dom";
-import { ThemeProvider } from '@material-ui/core/styles';
+import { ThemeProvider } from '@mui/material/styles';
 import theme from './theme';
 import './css/style.css';
 import NotFound from './NotFound';
