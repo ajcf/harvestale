@@ -3,6 +3,7 @@ import { useHistory } from 'react-router-dom';
 import { Box, Button, TextField, Typography } from '@mui/material';
 import { ThemeProvider } from '@mui/material/styles';
 import theme from './theme';
+import PublicHeader from './Components/Header/PublicHeader';
 
 const PASSWORD = process.env.REACT_APP_PARTICIPANT_PASSWORD || 'harvest2026';
 
@@ -23,25 +24,30 @@ const Login = () => {
 
   return (
     <ThemeProvider theme={theme}>
-      <Box sx={{ display: 'flex', flexDirection: 'column', alignItems: 'center', mt: 8 }}>
-        <Typography variant="h5" gutterBottom>Participants Only</Typography>
-        <Box component="form" onSubmit={handleSubmit} sx={{ width: 300 }}>
-          <TextField
-            label="Password"
-            type="password"
-            fullWidth
-            value={value}
-            onChange={(e) => { setValue(e.target.value); setError(false); }}
-            error={error}
-            helperText={error ? 'Incorrect password' : ''}
-            margin="normal"
-            inputProps={{ 'aria-label': 'Password' }}
-          />
-          <Button type="submit" variant="contained" color="primary" fullWidth sx={{ mt: 1 }}>
-            Enter
-          </Button>
-        </Box>
-      </Box>
+      <div className="not_home">
+        <PublicHeader />
+        <div className="content-wrapper">
+          <Box sx={{ display: 'flex', flexDirection: 'column', alignItems: 'center', mt: 4 }}>
+            <Typography variant="h5" gutterBottom>Participants Only</Typography>
+            <Box component="form" onSubmit={handleSubmit} sx={{ width: 300 }}>
+              <TextField
+                label="Password"
+                type="password"
+                fullWidth
+                value={value}
+                onChange={(e) => { setValue(e.target.value); setError(false); }}
+                error={error}
+                helperText={error ? 'Incorrect password' : ''}
+                margin="normal"
+                inputProps={{ 'aria-label': 'Password' }}
+              />
+              <Button type="submit" variant="contained" color="primary" fullWidth sx={{ mt: 1 }}>
+                Enter
+              </Button>
+            </Box>
+          </Box>
+        </div>
+      </div>
     </ThemeProvider>
   );
 };

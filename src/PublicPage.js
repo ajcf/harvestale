@@ -4,14 +4,14 @@ import { Box, Container, Typography } from '@mui/material';
 import { ThemeProvider } from '@mui/material/styles';
 import theme from './theme';
 import ScheduleDay from './Components/ScheduleDay';
+import PublicHeader from './Components/Header/PublicHeader';
 
 const PublicPage = () => (
   <ThemeProvider theme={theme}>
-    <Container maxWidth="md" sx={{ py: 4 }}>
-      <Typography variant="h3" align="center" gutterBottom>
-        The Harvest Ale
-      </Typography>
-
+    <div className="not_home">
+      <PublicHeader />
+      <div className="content-wrapper">
+    <Container maxWidth="md">
       <Typography variant="h5" gutterBottom sx={{ mt: 4 }}>
         Schedule
       </Typography>
@@ -43,6 +43,8 @@ const PublicPage = () => (
         <RouterLink to="/participants/login">Participants Only</RouterLink>
       </Box>
     </Container>
+      </div>
+    </div>
   </ThemeProvider>
 );
 

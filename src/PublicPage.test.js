@@ -11,8 +11,8 @@ const renderPublicPage = () =>
   );
 
 test('renders The Harvest Ale title', () => {
-  const { getByText } = renderPublicPage();
-  expect(getByText(/the harvest ale/i)).toBeTruthy();
+  const { getAllByText } = renderPublicPage();
+  expect(getAllByText(/the harvest ale/i).length).toBeGreaterThan(0);
 });
 
 test('renders schedule section', () => {
