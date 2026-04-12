@@ -1,6 +1,5 @@
 import React from 'react';
-import { Link as RouterLink } from 'react-router-dom';
-import { Box, Button, Container } from '@mui/material';
+import { Box, Container } from '@mui/material';
 import { ThemeProvider } from '@mui/material/styles';
 import theme from './theme';
 import ScheduleDay from './Components/ScheduleDay';
@@ -13,15 +12,11 @@ const PublicPage = () => (
       <div className="content-wrapper">
         <Container className="homebody">
           <Box className="readable-background">
-            <Box sx={{ mb: 3 }}>
-              <Button
-                component={RouterLink}
-                to="/participants/login"
-                variant="outlined"
-                color="secondary"
-              >
-                Participant Information
-              </Button>
+            {/* Replace with a real introduction to the event */}
+            <Box sx={{ mb: 2 }}>
+              Welcome to the Harvest Ale! We're so excited to share our weekend of singing,
+              dancing, and feasting with you. Below you'll find our public performance schedule
+              and a list of participating teams.
             </Box>
 
             <Box className="question">Schedule</Box>

@@ -17,12 +17,12 @@ test('renders The Harvest Ale title', () => {
 
 test('renders schedule section', () => {
   const { getByText } = renderPublicPage();
-  expect(getByText(/schedule/i)).toBeTruthy();
+  expect(getByText('Schedule')).toBeTruthy();
 });
 
 test('renders participating teams section', () => {
   const { getByText } = renderPublicPage();
-  expect(getByText(/participating teams/i)).toBeTruthy();
+  expect(getByText('Participating Teams')).toBeTruthy();
 });
 
 test('renders Participant Information link pointing to /participants/login', () => {

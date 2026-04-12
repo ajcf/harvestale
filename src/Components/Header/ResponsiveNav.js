@@ -7,6 +7,7 @@ import ButtonAppBarCollapse from "./ButtonBarCollapse";
 import ScheduleSharpIcon from "@mui/icons-material/ScheduleSharp";
 import InfoOutlined from "@mui/icons-material/InfoOutlined";
 import HelpOutline from "@mui/icons-material/HelpOutline";
+import Logout from "@mui/icons-material/Logout";
 
 const styles = (theme) => ({
   root: {
@@ -68,6 +69,23 @@ class ResponsiveNav extends Component {
       </Button>
     );
   };
+  getLogoutButton = () => {
+    const { classes, onLogout } = this.props;
+    if (!onLogout) return null;
+    return (
+      <Button
+        key="logout"
+        className={classes.btn}
+        variant="text"
+        color="secondary"
+        onClick={onLogout}
+        startIcon={<Logout />}
+      >
+        Log out
+      </Button>
+    );
+  };
+
   /**
    * @ returns Buttons for each navbar item
    */
@@ -78,6 +96,7 @@ class ResponsiveNav extends Component {
           this.getButton("/schedule", "Schedule", <ScheduleSharpIcon />),
           this.getButton("/information", "General Information", <InfoOutlined />),
           this.getButton("/faq", "FAQ", <HelpOutline />),
+          this.getLogoutButton(),
         ]}
       </Fragment>
     );

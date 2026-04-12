@@ -40,6 +40,15 @@ const Login = () => {
                 helperText={error ? 'Incorrect password' : ''}
                 margin="normal"
                 inputProps={{ 'aria-label': 'Password' }}
+                sx={{
+                  '& .MuiOutlinedInput-root': {
+                    backgroundColor: '#fff8e3',
+                    '& fieldset': { borderColor: 'rgba(47, 79, 79, 0.35)' },
+                    '&:hover fieldset': { borderColor: 'darkslategray' },
+                  },
+                  '& .MuiInputLabel-root': { color: 'darkslategray' },
+                  '& .MuiInputBase-input': { color: 'darkslategray' },
+                }}
               />
               <Button type="submit" variant="contained" color="primary" fullWidth sx={{ mt: 1 }}>
                 Enter

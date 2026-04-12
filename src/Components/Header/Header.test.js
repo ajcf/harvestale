@@ -28,21 +28,21 @@ test('renders logo link', () => {
 });
 
 test('logout button clears localStorage', () => {
-  const { getByText } = render(
+  const { getAllByText } = render(
     <MemoryRouter>
       <Header currentPage="Schedule" />
     </MemoryRouter>
   );
-  fireEvent.click(getByText(/log out/i));
+  fireEvent.click(getAllByText(/log out/i)[0]);
   expect(localStorage.getItem('harvestale_auth')).toBeNull();
 });
 
 test('logout button redirects to /', () => {
-  const { getByText } = render(
+  const { getAllByText } = render(
     <MemoryRouter>
       <Header currentPage="Schedule" />
     </MemoryRouter>
   );
-  fireEvent.click(getByText(/log out/i));
+  fireEvent.click(getAllByText(/log out/i)[0]);
   expect(mockPush).toHaveBeenCalledWith('/');
 });
