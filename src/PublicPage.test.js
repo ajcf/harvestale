@@ -25,9 +25,9 @@ test('renders participating teams section', () => {
   expect(getByText(/participating teams/i)).toBeTruthy();
 });
 
-test('renders Participants Only link pointing to /participants/login', () => {
+test('renders Participant Information link pointing to /participants/login', () => {
   const { getByText } = renderPublicPage();
-  const link = getByText(/participants only/i);
+  const link = getByText(/participant information/i);
   expect(link.closest('a').getAttribute('href')).toBe('/participants/login');
 });
 
