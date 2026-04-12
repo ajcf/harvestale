@@ -12,7 +12,6 @@ jest.mock('react-router-dom', () => ({
 
 beforeEach(() => {
   mockPush = jest.fn();
-  localStorage.setItem('harvestale_auth', 'true');
 });
 
 afterEach(() => {

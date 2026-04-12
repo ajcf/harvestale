@@ -17,7 +17,7 @@ const Header = (props) => {
       <RouterLink to="/" className="header-logo logo-with-shadow">
         The Harvest Ale
       </RouterLink>
-      <Button onClick={handleLogout} color="secondary" size="small">
+      <Button onClick={handleLogout} variant="outlined" color="secondary" size="small">
         Log out
       </Button>
     </div>
