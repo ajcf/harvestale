@@ -18,18 +18,18 @@ const Schedule = () => (
         day="Friday"
         date="10/10"
         events={[
-          { time: "5p", label: "Camp Opens", description: "Potluck dinner will be provided by local teams" }
+          { time: "5pm", label: "Camp Opens", description: "Potluck dinner will be provided by local teams" }
         ]}
       />
       <ScheduleDay
         day="Saturday"
         date="10/11"
         events={[
-          { time: "8:15a-9:30a", label: "Breakfast" },
-          { time: "9a", label: "Squires Meeting" },
-          { time: "10a", label: "Leave Camp" },
+          { time: "8:15am-9:30am", label: "Breakfast" },
+          { time: "9am", label: "Squires Meeting" },
+          { time: "10am", label: "Leave Camp" },
           {
-            time: "10:30a", label: "First Stand", description:
+            time: "10:30am", label: "First Stand", description:
               <Grid container>
                 <Grid item xs={12} sm={6} className="detail">
                   <u>Juggler Meadow tour</u>
@@ -50,7 +50,7 @@ const Schedule = () => (
               </Grid>
           },
           {
-            time: "11:30a", label: "Second Stand", description:
+            time: "11:30am", label: "Second Stand", description:
               <Grid container>
                 <Grid item xs={12} sm={6} className="detail">
                   Juggler Meadow tour
@@ -64,29 +64,29 @@ const Schedule = () => (
                 </Grid>
               </Grid>
           },
-          { time: "1p", label: "Lunch at Camp Apex" },
+          { time: "1pm", label: "Lunch at Camp Apex" },
           {
-            time: "3p", label: "Ashfield Fall Festival", description:
+            time: "3pm", label: "Ashfield Fall Festival", description:
               <div>
                 Festival is on <a href="https://maps.app.goo.gl/cDhYV8yVJTMCFhgc6">Ashfield Common</a><br />
                 Park in the <a href="https://maps.app.goo.gl/fWUtek5S5c5DBRx48">tennis court lot</a> and process in.
               </div>
           },
-          { time: "6p", label: "Cocktail Hour" },
-          { time: "7p", label: "Feast and Festivities" },
-          { time: "9p", label: "Contradance" }
+          { time: "6pm", label: "Cocktail Hour" },
+          { time: "7pm", label: "Feast and Festivities" },
+          { time: "9pm", label: "Contradance" }
         ]}
       />
       <ScheduleDay
         day="Sunday"
         date="10/12"
         events={[
-          { time: "8:00a - 9:00a", label: "Breakfast" },
-          { time: "9a", label: "Squires Meeting" },
-          { time: "9:45a", label: "Leave Camp" },
-          { time: "10:30a", label: <a href="https://maps.app.goo.gl/Rgjn7aQFCnyzD2CfA">Three Sisters Sanctuary</a> },
+          { time: "8:00am - 9:00am", label: "Breakfast" },
+          { time: "9am", label: "Squires Meeting" },
+          { time: "9:45am", label: "Leave Camp" },
+          { time: "10:30am", label: <a href="https://maps.app.goo.gl/Rgjn7aQFCnyzD2CfA">Three Sisters Sanctuary</a> },
           {
-            time: "11:45a", label: <a href="https://maps.app.goo.gl/E1ysuuaSgDDzQhpA9">Trolley Museum</a>, description:
+            time: "11:45am", label: <a href="https://maps.app.goo.gl/E1ysuuaSgDDzQhpA9">Trolley Museum</a>, description:
               <Grid container>
                 <Grid item xs={12} sm={6} className="detail">
                   <u>Juggler Meadow tour</u>
@@ -106,17 +106,17 @@ const Schedule = () => (
                 </Grid>
               </Grid>
           },
-          { time: "12:30p", label: "Singing at the Trolley Museum" },
-          { time: "1:00p", label: "Lunch at Camp Apex" },
-          { time: "3p", label: <a href="https://maps.app.goo.gl/6Z1xKSu4GZjZR24S6">Wilder Farm Sampler</a> },
-          { time: "6p", label: "Dinner at camp" },
+          { time: "12:30pm", label: "Singing at the Trolley Museum" },
+          { time: "1:00pm", label: "Lunch at Camp Apex" },
+          { time: "3pm", label: <a href="https://maps.app.goo.gl/6Z1xKSu4GZjZR24S6">Wilder Farm Sampler</a> },
+          { time: "6pm", label: "Dinner at camp" },
         ]}
       />
       <ScheduleDay
         day="Monday"
         date="10/13"
         events={[
-          { time: "8:15a", label: "Breakfast" },
+          { time: "8:15am", label: "Breakfast" },
         ]}
       />
     </Box>

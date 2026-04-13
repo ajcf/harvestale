@@ -14,7 +14,7 @@ const Information = () => (
     </Box>
     <Box>
       <p>
-        <a href="https://forms.gle/kXYcLhThyUCgtW2p8">Register Here</a>
+        <a href="https://tally.so/r/MeO868">Register Here</a>
       </p>
       <p>
         Please register by filling out the registration form above.

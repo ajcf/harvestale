@@ -300,6 +300,6 @@ body:has(.not_home) {
   vertical-align: baseline;
 }
 
-.schedule-item .additional-row {
+/* .schedule-item .additional-row {
   margin-top: 0.5rem;
-}
+} */

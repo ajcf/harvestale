@@ -1,5 +1,5 @@
 import React from 'react';
-import { Box, Container } from '@mui/material';
+import { Box, Container, Grid } from '@mui/material';
 import { ThemeProvider } from '@mui/material/styles';
 import theme from './theme';
 import ScheduleDay from './Components/ScheduleDay';
@@ -14,26 +14,68 @@ const PublicPage = () => (
           <Box className="readable-background">
             {/* Replace with a real introduction to the event */}
             <Box sx={{ mb: 2 }}>
-              Welcome to the Harvest Ale! We're so excited to share our weekend of singing,
-              dancing, and feasting with you. Below you'll find our public performance schedule
-              and a list of participating teams.
+              For four decades and counting, Juggler Meadow and Wake Robin Morris have welcomed the fall 
+              by touring the Northern Pioneer Valley with visiting sides for a full weekend of 
+              traditional English ritual dance. Check our schedule below and join us as we celebrate 
+              the harvest with ringing bells and crashing sticks!
             </Box>
 
-            <Box className="question">Schedule</Box>
-            {/* Public performance schedule — replace placeholder events with actual public performances */}
             <ScheduleDay
-              day="Saturday"
-              date="10/11"
+              day="Saturday, October 11"
               events={[
-                { time: "3p", label: "Ashfield Fall Festival" },
+                {
+                  time: "", label: "", description:
+                    <Grid container>
+                      <Grid item xs={12} sm={6} className="detail">
+                        <u>Tour 1</u>
+                      </Grid>
+                      <Grid item xs={12} sm={6} className="detail additional-row">
+                        <u>Tour 2</u>
+                      </Grid>
+                    </Grid>
+                },
+                {
+                  time: "10:30am", label: "First Stand", description:
+                    <Grid container>
+                      <Grid item xs={12} sm={6} className="detail">
+                        <a href="https://maps.app.goo.gl/eCw7iMPkAdpZL67f7">Mt Sugarloaf</a>
+                      </Grid>
+                      <Grid item xs={12} sm={6} className="detail additional-row">
+                        <a href="https://maps.app.goo.gl/vuMTamiYgKfTiUxZ9">Hagar's Farm Market</a>
+                      </Grid>
+                    </Grid>
+                },
+                {
+                  time: "11:30am", label: "Second Stand", description:
+                    <Grid container>
+                      <Grid item xs={12} sm={6} className="detail">
+                        <a href="https://maps.app.goo.gl/SvEM5o1xUNgDhnFs9">Historic Deerfield</a>
+                      </Grid>
+                      <Grid item xs={12} sm={6} className="detail additional-row">
+                        <a href="https://maps.app.goo.gl/GTcx5CfNQg83a7EJ8">West County Cider</a>
+                      </Grid>
+                    </Grid>
+                },
+                { time: "3pm", label: "Ashfield Fall Festival" },
               ]}
             />
             <ScheduleDay
-              day="Sunday"
-              date="10/12"
+              day="Sunday, October 12"
               events={[
-                { time: "10:30a", label: "Three Sisters Sanctuary" },
-                { time: "11:45a", label: "Trolley Museum" },
+                { time: "10:30am", label: "Three Sisters Sanctuary" },
+                { time: "11:45a", label: "Shelburne Falls Trolley Museum" },
+
+                {
+                  time: "11:45am", label: "Second Stand", description:
+                    <Grid container>
+                      <Grid item xs={12} sm={6} className="detail">
+                        <a href="https://maps.app.goo.gl/SvEM5o1xUNgDhnFs9">Historic Deerfield</a>
+                      </Grid>
+                      <Grid item xs={12} sm={6} className="detail additional-row">
+                        <a href="https://maps.app.goo.gl/GTcx5CfNQg83a7EJ8">West County Cider</a>
+                      </Grid>
+                    </Grid>
+                },
                 { time: "3p", label: "Wilder Farm Sampler" },
               ]}
             />
