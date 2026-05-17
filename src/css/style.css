@@ -162,13 +162,13 @@ body:has(.not_home) {
 }
 
 /* Participant link — public pages only */
-.header-participant-link {
+.not_home .header-participant-link {
   font-size: 0.8rem;
-  color: #3a6030 !important;
+  color: #3a6030;
   letter-spacing: 0.1em;
   text-transform: uppercase;
-  text-decoration: none !important;
-  border-bottom: 1px solid rgba(58, 96, 48, 0.4) !important;
+  text-decoration: none;
+  border-bottom: 1px solid rgba(58, 96, 48, 0.4);
 }
 
 @media (min-width: 750px) {
@@ -182,7 +182,7 @@ body:has(.not_home) {
   .header-logo {
     font-size: 3rem;
   }
-  .header-participant-link {
+  .not_home .header-participant-link {
     position: absolute;
     top: 0.75rem;
     right: 1.25rem;
