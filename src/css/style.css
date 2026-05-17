@@ -452,3 +452,31 @@ body:has(.not_home) {
     padding-left: 0;
   }
 }
+
+/* ── LOGIN ── */
+.login-card {
+  max-width: 360px;
+  margin: 3rem auto;
+  padding: 2rem;
+  background: #ffffff;
+  border: 1px solid #e8d8b0;
+  border-radius: 4px;
+  box-shadow: 0 2px 12px rgba(100, 70, 20, 0.07);
+  text-align: center;
+  position: relative;
+  z-index: 10;
+}
+
+.login-card-title {
+  font-size: 1.25rem;
+  color: #4a3520;
+  margin-bottom: 0.35rem;
+  letter-spacing: 0.05em;
+}
+
+.login-card-subtitle {
+  font-size: 0.9rem;
+  color: #a08050;
+  margin-bottom: 1.25rem;
+  line-height: 1.5;
+}
