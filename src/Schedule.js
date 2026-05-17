@@ -31,35 +31,27 @@ const Schedule = () => (
           {
             time: "10:30am", label: "First Stand", description:
               <Grid container>
-                <Grid item xs={12} sm={6} className="detail">
-                  <u>Juggler Meadow tour</u>
-                    <br/>Ring O’Bells
-                    <br/>Ragged Robin
-                    <br/>Jack in the Green
-                  <br />
+                <Grid item xs={12} sm={6} className="tour-jm">
+                  <span className="tour-name">Juggler Meadow</span>
+                  <div className="tour-teams">Ring O’Bells · Ragged Robin · Jack in the Green</div>
                   <a href="https://maps.app.goo.gl/eCw7iMPkAdpZL67f7">Mt Sugarloaf</a>
                 </Grid>
-                <Grid item xs={12} sm={6} className="detail additional-row">
-                  <u>Wake Robin tour</u>
-                  <br/>Handsome Molly
-                  <br/>Midnight Capers
-                  <br/>Newtowne
-                  <br />
-                  <a href="https://maps.app.goo.gl/vuMTamiYgKfTiUxZ9">Hager's Farm Market</a>
+                <Grid item xs={12} sm={6} className="tour-wr">
+                  <span className="tour-name">Wake Robin</span>
+                  <div className="tour-teams">Handsome Molly · Midnight Capers · Newtowne</div>
+                  <a href="https://maps.app.goo.gl/vuMTamiYgKfTiUxZ9">Hager’s Farm Market</a>
                 </Grid>
               </Grid>
           },
           {
             time: "11:30am", label: "Second Stand", description:
               <Grid container>
-                <Grid item xs={12} sm={6} className="detail">
-                  Juggler Meadow tour
-                  <br />
+                <Grid item xs={12} sm={6} className="tour-jm">
+                  <span className="tour-name">Juggler Meadow</span>
                   <a href="https://maps.app.goo.gl/SvEM5o1xUNgDhnFs9">Historic Deerfield</a>
                 </Grid>
-                <Grid item xs={12} sm={6} className="detail additional-row">
-                  Wake Robin tour
-                  <br />
+                <Grid item xs={12} sm={6} className="tour-wr">
+                  <span className="tour-name">Wake Robin</span>
                   <a href="https://maps.app.goo.gl/GTcx5CfNQg83a7EJ8">West County Cider</a>
                 </Grid>
               </Grid>
@@ -88,20 +80,14 @@ const Schedule = () => (
           {
             time: "11:45am", label: <a href="https://maps.app.goo.gl/E1ysuuaSgDDzQhpA9">Trolley Museum</a>, description:
               <Grid container>
-                <Grid item xs={12} sm={6} className="detail">
-                  <u>Juggler Meadow tour</u>
-                  <br/>Handsome Molly
-                  <br/>Midnight Capers
-                  <br/>Newtowne
-                  <br />
+                <Grid item xs={12} sm={6} className="tour-jm">
+                  <span className="tour-name">Juggler Meadow</span>
+                  <div className="tour-teams">Handsome Molly · Midnight Capers · Newtowne</div>
                   Glacial Potholes (park at <a href="https://maps.app.goo.gl/E1ysuuaSgDDzQhpA9">Trolley Museum</a>)
                 </Grid>
-                <Grid item xs={12} sm={6} className="detail additional-row">
-                  <u>Wake Robin tour</u>
-                  <br/>Ring O’Bells
-                  <br/>Ragged Robin
-                  <br/>Jack in the Green
-                  <br />
+                <Grid item xs={12} sm={6} className="tour-wr">
+                  <span className="tour-name">Wake Robin</span>
+                  <div className="tour-teams">Ring O’Bells · Ragged Robin · Jack in the Green</div>
                   <a href="https://maps.app.goo.gl/E1ysuuaSgDDzQhpA9">Trolley Museum</a>
                 </Grid>
               </Grid>

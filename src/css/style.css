@@ -395,3 +395,60 @@ body:has(.not_home) {
   margin-top: 0.5rem;
   padding-left: 6rem;
 }
+
+/* ── TOUR SPLIT ── */
+.schedule-description .MuiGrid-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 0.75rem;
+}
+
+.schedule-description .tour-jm,
+.schedule-description .tour-wr {
+  border-top: 2.5px solid;
+  padding-top: 0.45rem;
+}
+
+.schedule-description .tour-jm {
+  border-color: #c8942a;
+}
+
+.schedule-description .tour-wr {
+  border-color: #5a8a4a;
+}
+
+.tour-jm .tour-name {
+  font-size: 0.75rem;
+  font-weight: bold;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: #c8942a;
+  margin-bottom: 0.4rem;
+  display: block;
+}
+
+.tour-wr .tour-name {
+  font-size: 0.75rem;
+  font-weight: bold;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: #5a8a4a;
+  margin-bottom: 0.4rem;
+  display: block;
+}
+
+.tour-teams {
+  font-size: 0.85rem;
+  color: #7a6040;
+  line-height: 1.6;
+}
+
+/* Mobile: stack tour columns */
+@media (max-width: 750px) {
+  .schedule-description .MuiGrid-container {
+    grid-template-columns: 1fr;
+  }
+  .schedule-description {
+    padding-left: 0;
+  }
+}

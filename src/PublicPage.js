@@ -37,10 +37,12 @@ const PublicPage = () => (
                 {
                   time: "10:30am", label: "First Stand", description:
                     <Grid container>
-                      <Grid item xs={12} sm={6} className="detail">
+                      <Grid item xs={12} sm={6} className="tour-jm">
+                        <span className="tour-name">Juggler Meadow</span>
                         <a href="https://maps.app.goo.gl/eCw7iMPkAdpZL67f7">Mt Sugarloaf</a>
                       </Grid>
-                      <Grid item xs={12} sm={6} className="detail additional-row">
+                      <Grid item xs={12} sm={6} className="tour-wr">
+                        <span className="tour-name">Wake Robin</span>
                         <a href="https://maps.app.goo.gl/vuMTamiYgKfTiUxZ9">Hager's Farm Market</a>
                       </Grid>
                     </Grid>
@@ -48,10 +50,12 @@ const PublicPage = () => (
                 {
                   time: "11:30am", label: "Second Stand", description:
                     <Grid container>
-                      <Grid item xs={12} sm={6} className="detail">
+                      <Grid item xs={12} sm={6} className="tour-jm">
+                        <span className="tour-name">Juggler Meadow</span>
                         <a href="https://maps.app.goo.gl/SvEM5o1xUNgDhnFs9">Historic Deerfield</a>
                       </Grid>
-                      <Grid item xs={12} sm={6} className="detail additional-row">
+                      <Grid item xs={12} sm={6} className="tour-wr">
+                        <span className="tour-name">Wake Robin</span>
                         <a href="https://maps.app.goo.gl/GTcx5CfNQg83a7EJ8">West County Cider</a>
                       </Grid>
                     </Grid>
@@ -63,16 +67,16 @@ const PublicPage = () => (
               day="Sunday, October 12"
               events={[
                 { time: "10:30am", label: "Three Sisters Sanctuary" },
-                { time: "11:45a", label: "Shelburne Falls Trolley Museum" },
-
                 {
                   time: "11:45am", label: "Second Stand", description:
                     <Grid container>
-                      <Grid item xs={12} sm={6} className="detail">
-                        <a href="https://maps.app.goo.gl/SvEM5o1xUNgDhnFs9">Historic Deerfield</a>
+                      <Grid item xs={12} sm={6} className="tour-jm">
+                        <span className="tour-name">Juggler Meadow</span>
+                        <a href="https://maps.app.goo.gl/SvEM5o1xUNgDhnFs9">Glacial Potholes</a>
                       </Grid>
-                      <Grid item xs={12} sm={6} className="detail additional-row">
-                        <a href="https://maps.app.goo.gl/GTcx5CfNQg83a7EJ8">West County Cider</a>
+                      <Grid item xs={12} sm={6} className="tour-wr">
+                        <span className="tour-name">Wake Robin</span>
+                        <a href="https://maps.app.goo.gl/E1ysuuaSgDDzQhpA9">Trolley Museum</a>
                       </Grid>
                     </Grid>
                 },
