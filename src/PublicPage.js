@@ -17,7 +17,7 @@ const PublicPage = () => (
               For four decades and counting, Juggler Meadow and Wake Robin Morris have welcomed the fall 
               by touring the Northern Pioneer Valley with visiting sides for a full weekend of 
               traditional English ritual dance. Check our schedule below and join us as we celebrate 
-              the harvest with ringing bells and crashing sticks!
+              the harvest with ringing bells and clashing sticks!
             </Box>
 
             <ScheduleDay
@@ -41,7 +41,7 @@ const PublicPage = () => (
                         <a href="https://maps.app.goo.gl/eCw7iMPkAdpZL67f7">Mt Sugarloaf</a>
                       </Grid>
                       <Grid item xs={12} sm={6} className="detail additional-row">
-                        <a href="https://maps.app.goo.gl/vuMTamiYgKfTiUxZ9">Hagar's Farm Market</a>
+                        <a href="https://maps.app.goo.gl/vuMTamiYgKfTiUxZ9">Hager's Farm Market</a>
                       </Grid>
                     </Grid>
                 },

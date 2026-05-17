@@ -14,7 +14,7 @@ const Login = () => {
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    if (value === PASSWORD) {
+    if (value.toLowerCase() === PASSWORD.toLowerCase()) {
       localStorage.setItem('harvestale_auth', 'true');
       history.push('/participants/schedule');
     } else {

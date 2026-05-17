@@ -45,7 +45,7 @@ const Schedule = () => (
                   <br/>Midnight Capers
                   <br/>Newtowne
                   <br />
-                  <a href="https://maps.app.goo.gl/vuMTamiYgKfTiUxZ9">Hagar's Farm Market</a>
+                  <a href="https://maps.app.goo.gl/vuMTamiYgKfTiUxZ9">Hager's Farm Market</a>
                 </Grid>
               </Grid>
           },
