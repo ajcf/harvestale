@@ -360,33 +360,38 @@ body:has(.not_home) {
   background: linear-gradient(to right, #d4a84a, transparent);
 }
 
-.schedule-location {
-  text-align: center;
+/* ── SCHEDULE ITEM ── */
+.schedule-item {
+  padding: 0.6rem 0;
+  border-bottom: 1px solid #ede0c0;
+}
+
+.schedule-day-items .schedule-item:last-child {
+  border-bottom: none;
+}
+
+.schedule-item-row {
+  display: flex;
+  gap: 1rem;
+  align-items: baseline;
+}
+
+.schedule-time {
+  min-width: 5rem;
+  text-align: right;
+  font-size: 0.85rem;
+  color: #a08050;
+  letter-spacing: 0.05em;
+  flex-shrink: 0;
+}
+
+.schedule-label {
+  font-size: 1.05rem;
+  color: #3d2e1e;
+  flex: 1;
 }
 
 .schedule-description {
-  padding-bottom: 1rem !important;
-}
-
-.schedule-item .MuiGrid-item.schedule-time {
-  text-align: right;
-}
-.schedule-item .MuiGrid-item.schedule-label {
-  text-align: left;
-}
-
-.schedule-item {
-  padding-top: 1rem;
-}
-
-.schedule-item .MuiGrid-item {
-  text-align: center;
-}
-
-.schedule-item .detail {
-  vertical-align: baseline;
-}
-
-/* .schedule-item .additional-row {
   margin-top: 0.5rem;
-} */
+  padding-left: 6rem;
+}
