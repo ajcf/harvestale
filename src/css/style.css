@@ -90,30 +90,6 @@ body:has(.not_home) {
   left: 0;
 }
 
-/* ── SIDE FOLIAGE — desktop only ── */
-@media (min-width: 750px) {
-  .not_home::before,
-  .not_home::after {
-    content: '';
-    position: fixed;
-    top: 0;
-    width: 120px;
-    height: 100vh;
-    background: url('../../public/foliage.jpg') center / cover no-repeat;
-    pointer-events: none;
-    z-index: 5;
-  }
-  .not_home::before {
-    left: 0;
-    -webkit-mask-image: linear-gradient(to right, rgba(0,0,0,0.55) 0%, rgba(0,0,0,0.28) 60%, transparent 100%);
-    mask-image: linear-gradient(to right, rgba(0,0,0,0.55) 0%, rgba(0,0,0,0.28) 60%, transparent 100%);
-  }
-  .not_home::after {
-    right: 0;
-    -webkit-mask-image: linear-gradient(to left, rgba(0,0,0,0.55) 0%, rgba(0,0,0,0.28) 60%, transparent 100%);
-    mask-image: linear-gradient(to left, rgba(0,0,0,0.55) 0%, rgba(0,0,0,0.28) 60%, transparent 100%);
-  }
-}
 
 .homebody {
   display: flex !important;
@@ -171,7 +147,7 @@ body:has(.not_home) {
 /* ── HERO HEADER ── */
 .header {
   background:
-    linear-gradient(to bottom, rgba(30, 15, 5, 0.1) 0%, rgba(255, 251, 240, 1) 90%),
+    linear-gradient(to bottom, rgba(30, 15, 5, 0.1) 0%, rgba(255, 251, 240, 0.9) 100%),
     url('../../public/foliage.jpg') center / cover no-repeat;
   position: absolute;
   z-index: 15;
@@ -180,15 +156,14 @@ body:has(.not_home) {
 
 .header-logo {
   font-weight: normal;
-  text-decoration: none;
-  color: #2e1a08;
+  color: #3a6030;
   letter-spacing: 0.12em;
   text-shadow: 0 1px 8px rgba(255, 248, 220, 0.95), 0 0 30px rgba(255, 248, 220, 0.7);
   line-height: 1;
 }
 
 .header-tagline {
-  font-size: 0.85rem;
+  font-size: 1rem;
   color: #4a7840;
   letter-spacing: 0.25em;
   text-transform: uppercase;
@@ -199,20 +174,23 @@ body:has(.not_home) {
 /* Participant link — public pages only */
 .not_home .header-participant-link {
   font-size: 0.8rem;
-  color: #3a6030;
+  color: #2e1a08;
   letter-spacing: 0.1em;
   text-transform: uppercase;
   text-decoration: none;
-  border-bottom: 1px solid rgba(58, 96, 48, 0.4);
+  background: rgba(255, 251, 240, 0.75);
+  padding: 0.25rem 0.6rem;
+  border-radius: 3px;
 }
 
 @media (min-width: 750px) {
   .header {
-    height: 160px;
+    height: 120px;
     display: flex;
     flex-direction: column;
     justify-content: flex-end;
     align-items: center;
+    padding-bottom: 1.25rem;
   }
   .header-logo {
     font-size: 3rem;
@@ -223,18 +201,25 @@ body:has(.not_home) {
     right: 1.25rem;
   }
   .content-wrapper {
-    padding-top: 160px;
+    padding-top: 120px;
+  }
+  .header-with-nav {
+    height: 175px;
+  }
+  .content-wrapper-with-nav {
+    padding-top: 175px;
   }
 }
 
 @media (max-width: 750px) {
   .header {
-    height: 64px;
+    height: 90px;
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     align-items: center;
-    justify-content: space-between;
-    padding: 0 1rem;
+    justify-content: center;
+    gap: 0.3rem;
+    padding: 0.5rem 1rem;
   }
   .header-logo {
     font-size: 1.8rem;
@@ -245,7 +230,7 @@ body:has(.not_home) {
     display: none;
   }
   .content-wrapper {
-    padding-top: 64px;
+    padding-top: 90px;
   }
 }
 
@@ -264,7 +249,7 @@ body:has(.not_home) {
 
 .nav-bar a,
 .nav-bar button {
-  font-size: 0.85rem;
+  font-size: 1rem;
   color: #5a4030;
   letter-spacing: 0.12em;
   text-transform: uppercase;
@@ -390,7 +375,7 @@ body:has(.not_home) {
 
 /* ── SCHEDULE DATE / LOCATION ── */
 .schedule-date {
-  font-size: 0.9rem;
+  font-size: 1rem;
   font-variant: small-caps;
   letter-spacing: 0.1em;
   color: #7a6040;
@@ -400,7 +385,7 @@ body:has(.not_home) {
 
 .schedule-location {
   font-family: 'Podkova';
-  font-size: 0.9rem;
+  font-size: 1rem;
   color: #4a3825;
   text-align: center;
   line-height: 1.6;
@@ -426,14 +411,14 @@ body:has(.not_home) {
 .schedule-time {
   min-width: 5rem;
   text-align: right;
-  font-size: 0.85rem;
+  font-size: 1rem;
   color: #a08050;
   letter-spacing: 0.05em;
   flex-shrink: 0;
 }
 
 .schedule-label {
-  font-size: 1.05rem;
+  font-size: 1.15rem;
   color: #3d2e1e;
   flex: 1;
 }
@@ -465,7 +450,7 @@ body:has(.not_home) {
 }
 
 .tour-jm .tour-name {
-  font-size: 0.75rem;
+  font-size: 1rem;
   font-weight: bold;
   letter-spacing: 0.12em;
   text-transform: uppercase;
@@ -475,7 +460,7 @@ body:has(.not_home) {
 }
 
 .tour-wr .tour-name {
-  font-size: 0.75rem;
+  font-size: 1rem;
   font-weight: bold;
   letter-spacing: 0.12em;
   text-transform: uppercase;
@@ -485,7 +470,7 @@ body:has(.not_home) {
 }
 
 .tour-teams {
-  font-size: 0.85rem;
+  font-size: 1rem;
   color: #7a6040;
   line-height: 1.6;
 }
@@ -522,7 +507,7 @@ body:has(.not_home) {
 }
 
 .login-card-subtitle {
-  font-size: 0.9rem;
+  font-size: 1rem;
   color: #a08050;
   margin-bottom: 1.25rem;
   line-height: 1.5;

@@ -21,7 +21,7 @@ const Information = () => (
         Each person attending should fill out the form separately, even guests.
       </p>
       <p>
-        The Ale fee this year is $150 for the full weekend, or $45 for guests only attending the feast. We ask that each team coordinate payment
+        The Ale fee this year is $150 for the full weekend, or $50 for guests only attending the feast. We ask that each team coordinate payment
         and send a single check. Squires will get an email with details about how to send payment.
       </p>
     </Box>

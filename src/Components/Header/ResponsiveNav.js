@@ -57,7 +57,7 @@ class ResponsiveNav extends Component {
         startIcon={icon}
         variant="text"
         sx={{
-          fontSize: "0.85rem",
+          fontSize: "1rem",
           letterSpacing: "0.12em",
           textTransform: "uppercase",
           color: currentPage === title ? "#c8942a" : "#5a4030",
@@ -85,7 +85,7 @@ class ResponsiveNav extends Component {
         onClick={onLogout}
         startIcon={<Logout />}
         sx={{
-          fontSize: "0.85rem",
+          fontSize: "1rem",
           letterSpacing: "0.12em",
           textTransform: "uppercase",
           color: "#5a4030",

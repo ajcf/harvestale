@@ -3,10 +3,7 @@ import { Link as RouterLink } from "react-router-dom";
 
 const PublicHeader = () => (
   <div className="header">
-    <RouterLink to="/" className="header-logo">
-      The Harvest Ale
-    </RouterLink>
-    <div className="header-tagline">Northern Pioneer Valley</div>
+    <div className="header-logo">The Harvest Ale</div>
     <RouterLink
       to="/participants/login"
       className="header-participant-link"

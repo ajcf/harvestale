@@ -18,9 +18,10 @@ const PublicPage = () => (
               traditional English ritual dance. Check our schedule below and join us as we celebrate
               the harvest with ringing bells and clashing sticks!
             </p>
+          
 
-            <ScheduleDay
-              day="Saturday, October 11"
+            {/* <ScheduleDay
+              day="Saturday, October 10"
               events={[
                 {
                   time: "10:30am", label: "First Stand", description:
@@ -52,7 +53,7 @@ const PublicPage = () => (
               ]}
             />
             <ScheduleDay
-              day="Sunday, October 12"
+              day="Sunday, October 11"
               events={[
                 { time: "10:30am", label: "Three Sisters Sanctuary" },
                 {
@@ -70,7 +71,11 @@ const PublicPage = () => (
                 },
                 { time: "3p", label: "Wilder Farm Sampler" },
               ]}
-            />
+            /> */}
+
+            <Box className="question" sx={{ mt: 3 }}>Schedule</Box>
+            {/* Replace with actual team list */}
+            <Box>Schedule coming soon.</Box>
 
             <Box className="question" sx={{ mt: 3 }}>Participating Teams</Box>
             {/* Replace with actual team list */}

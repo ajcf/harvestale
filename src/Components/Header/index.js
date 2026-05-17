@@ -1,5 +1,5 @@
 import React from "react";
-import { Link as RouterLink, useHistory } from "react-router-dom";
+import { useHistory } from "react-router-dom";
 import ResponsiveNav from "./ResponsiveNav";
 
 const Header = (props) => {
@@ -11,11 +11,8 @@ const Header = (props) => {
   };
 
   return (
-    <div className="header">
-      <RouterLink to="/" className="header-logo">
-        The Harvest Ale
-      </RouterLink>
-      <div className="header-tagline">Northern Pioneer Valley</div>
+    <div className="header header-with-nav">
+      <div className="header-logo">The Harvest Ale</div>
       <ResponsiveNav currentPage={props.currentPage} onLogout={handleLogout} />
     </div>
   );
