@@ -333,19 +333,31 @@ body:has(.not_home) {
   }
 }
 
-.schedule-day-label {
-  font-size: 2rem;
-  font-weight: 200;
-  font-family: 'EagleLake';
-  color: goldenrod;
+/* ── SCHEDULE DAY ── */
+.schedule-day {
+  margin-bottom: 2.5rem;
 }
 
-.schedule-date {
-  font-size: 1.5rem;
+.schedule-day-header {
   display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
+  align-items: baseline;
+  gap: 0.75rem;
+  margin-bottom: 1rem;
+}
+
+.schedule-day-label {
+  font-size: 1.6rem;
+  font-family: 'EagleLake';
+  font-weight: normal;
+  color: #c8942a;
+  letter-spacing: 0.05em;
+  white-space: nowrap;
+}
+
+.schedule-day-rule {
+  flex: 1;
+  height: 1px;
+  background: linear-gradient(to right, #d4a84a, transparent);
 }
 
 .schedule-location {
