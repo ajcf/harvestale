@@ -67,7 +67,7 @@ const Schedule = () => (
           },
           { time: "6pm", label: "Cocktail Hour" },
           { time: "7pm", label: "Feast and Festivities" },
-          { time: "9pm", label: "Contradance" }
+          // { time: "9pm", label: "Contradance" }
         ]}
       />
       <ScheduleDay

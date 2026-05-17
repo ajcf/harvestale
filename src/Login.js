@@ -30,7 +30,7 @@ const Login = () => {
           <Box component="form" onSubmit={handleSubmit} className="login-card">
             <div className="login-card-title">Participants Only</div>
             <div className="login-card-subtitle">
-              Enter your team password to access the participant schedule
+              Enter the password to access the participant schedule
             </div>
             <TextField
               label="Password"
