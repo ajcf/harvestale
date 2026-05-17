@@ -12,10 +12,11 @@ const Header = (props) => {
 
   return (
     <div className="header">
-      <ResponsiveNav currentPage={props.currentPage} onLogout={handleLogout} />
-      <RouterLink to="/" className="header-logo logo-with-shadow">
+      <RouterLink to="/" className="header-logo">
         The Harvest Ale
       </RouterLink>
+      <div className="header-tagline">Northern Pioneer Valley</div>
+      <ResponsiveNav currentPage={props.currentPage} onLogout={handleLogout} />
     </div>
   );
 };

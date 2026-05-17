@@ -1,21 +1,18 @@
 import React from "react";
 import { Link as RouterLink } from "react-router-dom";
-import { Button } from "@mui/material";
 
 const PublicHeader = () => (
   <div className="header">
-    <RouterLink to="/" className="header-logo logo-with-shadow">
+    <RouterLink to="/" className="header-logo">
       The Harvest Ale
     </RouterLink>
-    <Button
-      component={RouterLink}
+    <div className="header-tagline">Northern Pioneer Valley</div>
+    <RouterLink
       to="/participants/login"
-      variant="text"
-      color="secondary"
-      size="small"
+      className="header-participant-link"
     >
-      Participant Information
-    </Button>
+      Participant Information →
+    </RouterLink>
   </div>
 );
 
