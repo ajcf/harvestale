@@ -12,13 +12,12 @@ const PublicPage = () => (
       <div className="content-wrapper">
         <Container className="homebody">
           <Box className="readable-background">
-            {/* Replace with a real introduction to the event */}
-            <Box sx={{ mb: 2 }}>
-              For four decades and counting, Juggler Meadow and Wake Robin Morris have welcomed the fall 
-              by touring the Northern Pioneer Valley with visiting sides for a full weekend of 
-              traditional English ritual dance. Check our schedule below and join us as we celebrate 
+            <p className="intro">
+              For four decades and counting, Juggler Meadow and Wake Robin Morris have welcomed the fall
+              by touring the Northern Pioneer Valley with visiting sides for a full weekend of
+              traditional English ritual dance. Check our schedule below and join us as we celebrate
               the harvest with ringing bells and clashing sticks!
-            </Box>
+            </p>
 
             <ScheduleDay
               day="Saturday, October 11"
