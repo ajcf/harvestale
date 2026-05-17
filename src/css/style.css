@@ -36,9 +36,11 @@ html,body{
 
 body {
   font-family: 'EagleLake';
+  font-size: 18px;
   font-weight: 400;
-  color: #FFD700;
+  color: #3d2e1e;
   margin: 0;
+  background-color: #fffbf0;
 }
 
 body:has(.not_home) {
@@ -47,6 +49,16 @@ body:has(.not_home) {
   background-repeat: no-repeat;
   background-position: top;
   background-size: contain; */
+}
+
+/* Links — consistent warm underline across all content */
+.not_home a {
+  color: #3d2e1e;
+  text-decoration: underline;
+  text-decoration-color: rgba(90, 138, 74, 0.5);
+}
+.not_home a:hover {
+  text-decoration-color: rgba(90, 138, 74, 0.9);
 }
 .not_home .background {
   position: absolute;
