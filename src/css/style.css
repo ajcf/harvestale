@@ -239,18 +239,47 @@ body:has(.not_home) {
   }
 }
 
+/* ── NAV BAR (participant pages) ── */
+.nav-bar {
+  background: #fffbf0;
+  border-bottom: 1px solid #e8d8a0;
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+  padding: 0.55rem 1rem;
+  position: relative;
+  z-index: 10;
+  width: 100%;
+}
+
+.nav-bar a,
+.nav-bar button {
+  font-size: 0.85rem;
+  color: #5a4030;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  text-decoration: none;
+}
+
+.nav-bar a.active,
+.nav-bar button.active {
+  color: #c8942a;
+  border-bottom: 1.5px solid #c8942a;
+  padding-bottom: 1px;
+}
+
 .MuiDrawer-paperAnchorLeft {
-  background-color: #FFF8E3 !important;
+  background-color: #fffbf0 !important;
 }
 
 .drawer-close {
   display: flex;
-  justify-content: right;
+  justify-content: flex-end;
 }
 
 .header .menu-icon {
   font-size: 2rem;
-  color: #058b09;
+  color: #5a4030;
 }
 
 .menu-icon svg {

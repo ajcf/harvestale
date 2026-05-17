@@ -31,16 +31,13 @@ const styles = (theme) => ({
     display: "flex",
     flexDirection: "row",
     justifyContent: "space-around",
-    borderBottom: "solid 1px goldenrod",
+    borderBottom: "solid 1px #e8d8a0",
   },
   btn: {
     marginLeft: theme.spacing(1),
     marginRight: theme.spacing(1),
     marginBottom: theme.spacing(0.5),
     marginTop: theme.spacing(0.5),
-    "&hover": {
-      fontWeight: 900,
-    }
   },
   collapseBox: {
     display: "flex",
@@ -60,15 +57,23 @@ class ResponsiveNav extends Component {
         startIcon={icon}
         variant="text"
         sx={{
-          "fontWeight": currentPage === title ? "900" : "400"
+          fontSize: "0.85rem",
+          letterSpacing: "0.12em",
+          textTransform: "uppercase",
+          color: currentPage === title ? "#c8942a" : "#5a4030",
+          fontWeight: currentPage === title ? "700" : "400",
+          borderBottom: currentPage === title ? "1.5px solid #c8942a" : "none",
+          borderRadius: 0,
+          paddingBottom: currentPage === title ? "2px" : "4px",
+          "&:hover": { backgroundColor: "transparent", color: "#c8942a" },
         }}
-        color="secondary"
         to={path}
       >
         {title}
       </Button>
     );
   };
+
   getLogoutButton = () => {
     const { classes, onLogout } = this.props;
     if (!onLogout) return null;
@@ -77,30 +82,31 @@ class ResponsiveNav extends Component {
         key="logout"
         className={classes.btn}
         variant="text"
-        color="secondary"
         onClick={onLogout}
         startIcon={<Logout />}
+        sx={{
+          fontSize: "0.85rem",
+          letterSpacing: "0.12em",
+          textTransform: "uppercase",
+          color: "#5a4030",
+          "&:hover": { backgroundColor: "transparent", color: "#c8942a" },
+        }}
       >
         Log out
       </Button>
     );
   };
 
-  /**
-   * @ returns Buttons for each navbar item
-   */
-  getItems = () => {
-    return (
-      <Fragment>
-        {[
-          this.getButton("/schedule", "Schedule", <ScheduleSharpIcon />),
-          this.getButton("/information", "General Information", <InfoOutlined />),
-          this.getButton("/faq", "FAQ", <HelpOutline />),
-          this.getLogoutButton(),
-        ]}
-      </Fragment>
-    );
-  };
+  getItems = () => (
+    <Fragment>
+      {[
+        this.getButton("/schedule", "Schedule", <ScheduleSharpIcon />),
+        this.getButton("/information", "General Information", <InfoOutlined />),
+        this.getButton("/faq", "FAQ", <HelpOutline />),
+        this.getLogoutButton(),
+      ]}
+    </Fragment>
+  );
 
   render() {
     const { classes } = this.props;
