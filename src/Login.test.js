@@ -23,29 +23,29 @@ beforeEach(() => {
 });
 
 test('renders password input and submit button', () => {
-  const { getByLabelText, getByText } = renderLogin();
+  const { getByLabelText, getByRole } = renderLogin();
   expect(getByLabelText(/password/i)).toBeTruthy();
-  expect(getByText(/enter/i)).toBeTruthy();
+  expect(getByRole('button', { name: /enter/i })).toBeTruthy();
 });
 
 test('shows error message on wrong password', () => {
-  const { getByLabelText, getByText } = renderLogin();
+  const { getByLabelText, getByRole, getByText } = renderLogin();
   fireEvent.change(getByLabelText(/password/i), { target: { value: 'wrongpassword' } });
-  fireEvent.click(getByText(/enter/i));
+  fireEvent.click(getByRole('button', { name: /enter/i }));
   expect(getByText(/incorrect password/i)).toBeTruthy();
 });
 
 test('does not set localStorage on wrong password', () => {
-  const { getByLabelText, getByText } = renderLogin();
+  const { getByLabelText, getByRole } = renderLogin();
   fireEvent.change(getByLabelText(/password/i), { target: { value: 'wrongpassword' } });
-  fireEvent.click(getByText(/enter/i));
+  fireEvent.click(getByRole('button', { name: /enter/i }));
   expect(localStorage.getItem('harvestale_auth')).toBeNull();
 });
 
 test('sets localStorage and redirects on correct password', () => {
-  const { getByLabelText, getByText } = renderLogin();
+  const { getByLabelText, getByRole } = renderLogin();
   fireEvent.change(getByLabelText(/password/i), { target: { value: 'harvest2026' } });
-  fireEvent.click(getByText(/enter/i));
+  fireEvent.click(getByRole('button', { name: /enter/i }));
   expect(localStorage.getItem('harvestale_auth')).toBe('true');
   expect(mockPush).toHaveBeenCalledWith('/participants/schedule');
 });
