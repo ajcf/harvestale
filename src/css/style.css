@@ -388,6 +388,25 @@ body:has(.not_home) {
   background: linear-gradient(to right, #d4a84a, transparent);
 }
 
+/* ── SCHEDULE DATE / LOCATION ── */
+.schedule-date {
+  font-size: 0.9rem;
+  font-variant: small-caps;
+  letter-spacing: 0.1em;
+  color: #7a6040;
+  text-align: center;
+  margin-bottom: 0.25rem;
+}
+
+.schedule-location {
+  font-family: 'Podkova';
+  font-size: 0.9rem;
+  color: #4a3825;
+  text-align: center;
+  line-height: 1.6;
+  margin-bottom: 2rem;
+}
+
 /* ── SCHEDULE ITEM ── */
 .schedule-item {
   padding: 0.6rem 0;

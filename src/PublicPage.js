@@ -23,17 +23,6 @@ const PublicPage = () => (
               day="Saturday, October 11"
               events={[
                 {
-                  time: "", label: "", description:
-                    <Grid container>
-                      <Grid item xs={12} sm={6} className="detail">
-                        <u>Tour 1</u>
-                      </Grid>
-                      <Grid item xs={12} sm={6} className="detail additional-row">
-                        <u>Tour 2</u>
-                      </Grid>
-                    </Grid>
-                },
-                {
                   time: "10:30am", label: "First Stand", description:
                     <Grid container>
                       <Grid item xs={12} sm={6} className="tour-jm">
