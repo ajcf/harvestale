@@ -34,7 +34,7 @@ class ButtonAppBarCollapse extends React.Component {
 
     return (
       <div className={classes.buttonCollapse}>
-        <IconButton className="menu-icon" onClick={this.open}>
+        <IconButton className="menu-icon" onClick={this.open} aria-label="Open menu">
           <MenuIcon />
         </IconButton>
         <Drawer
@@ -43,7 +43,7 @@ class ButtonAppBarCollapse extends React.Component {
           onClose={this.close}
         >
           <div className="drawer-close">
-            <IconButton onClick={this.close}>
+            <IconButton onClick={this.close} aria-label="Close menu">
               <Close />
             </IconButton>
           </div>

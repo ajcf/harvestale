@@ -56,16 +56,17 @@ class ResponsiveNav extends Component {
         component={RouterLink}
         startIcon={icon}
         variant="text"
+        aria-current={currentPage === title ? "page" : undefined}
         sx={{
           fontSize: "1rem",
           letterSpacing: "0.12em",
           textTransform: "uppercase",
-          color: currentPage === title ? "#c8942a" : "#5a4030",
+          color: currentPage === title ? "#8c671d" : "#5a4030",
           fontWeight: currentPage === title ? "700" : "400",
-          borderBottom: currentPage === title ? "1.5px solid #c8942a" : "none",
+          borderBottom: currentPage === title ? "1.5px solid #8c671d" : "none",
           borderRadius: 0,
           paddingBottom: currentPage === title ? "2px" : "4px",
-          "&:hover": { backgroundColor: "transparent", color: "#c8942a" },
+          "&:hover": { backgroundColor: "transparent", color: "#8c671d" },
         }}
         to={path}
       >
@@ -89,7 +90,7 @@ class ResponsiveNav extends Component {
           letterSpacing: "0.12em",
           textTransform: "uppercase",
           color: "#5a4030",
-          "&:hover": { backgroundColor: "transparent", color: "#c8942a" },
+          "&:hover": { backgroundColor: "transparent", color: "#8c671d" },
         }}
       >
         Log out

@@ -40,17 +40,18 @@ const Login = () => {
               onChange={(e) => { setValue(e.target.value); setError(false); }}
               error={error}
               helperText={error ? 'Incorrect password' : ''}
+              FormHelperTextProps={{ role: 'alert' }}
               margin="normal"
-              inputProps={{ 'aria-label': 'Password' }}
+              inputProps={{ autoComplete: 'current-password' }}
               sx={{
                 '& .MuiOutlinedInput-root': {
                   backgroundColor: '#fffbf0',
                   '& fieldset': { borderColor: '#ddd0a8' },
-                  '&:hover fieldset': { borderColor: '#c8942a' },
-                  '&.Mui-focused fieldset': { borderColor: '#c8942a' },
+                  '&:hover fieldset': { borderColor: '#8c671d' },
+                  '&.Mui-focused fieldset': { borderColor: '#8c671d' },
                 },
-                '& .MuiInputLabel-root': { color: '#a08050' },
-                '& .MuiInputLabel-root.Mui-focused': { color: '#c8942a' },
+                '& .MuiInputLabel-root': { color: '#7a6040' },
+                '& .MuiInputLabel-root.Mui-focused': { color: '#8c671d' },
                 '& .MuiInputBase-input': { color: '#3d2e1e', fontSize: '1rem' },
               }}
             />
@@ -60,11 +61,11 @@ const Login = () => {
               fullWidth
               sx={{
                 mt: 1,
-                backgroundColor: '#c8942a',
+                backgroundColor: '#8c671d',
                 color: '#fff',
                 fontSize: '1rem',
                 letterSpacing: '0.1em',
-                '&:hover': { backgroundColor: '#a07820' },
+                '&:hover': { backgroundColor: '#775718' },
               }}
             >
               Enter
