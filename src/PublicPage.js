@@ -18,21 +18,25 @@ const PublicPage = () => (
               traditional English ritual dance. Check our schedule below and join us as we celebrate
               the harvest with ringing bells and clashing sticks!
             </p>
-          
 
-            {/* <ScheduleDay
-              day="Saturday, October 10"
+            <Box className="question" sx={{ mt: 3 }}>Schedule</Box>
+
+            <ScheduleDay
+              day="Saturday"
+              date="10/10"
               events={[
                 {
                   time: "10:30am", label: "First Stand", description:
                     <Grid container>
                       <Grid item xs={12} sm={6} className="tour-jm">
                         <span className="tour-name">Juggler Meadow</span>
-                        <a href="https://maps.app.goo.gl/eCw7iMPkAdpZL67f7">Mt Sugarloaf</a>
+                        <div className="tour-teams">Firebird · Jack in the Green</div>
+                        <a className="tour-location" href="https://maps.app.goo.gl/eCw7iMPkAdpZL67f7">Mt Sugarloaf</a>
                       </Grid>
                       <Grid item xs={12} sm={6} className="tour-wr">
                         <span className="tour-name">Wake Robin</span>
-                        <a href="https://maps.app.goo.gl/vuMTamiYgKfTiUxZ9">Hager's Farm Market</a>
+                        <div className="tour-teams">Westerly · Rock Creek · Marlboro M</div>
+                        <a className="tour-location" href="https://maps.app.goo.gl/vuMTamiYgKfTiUxZ9">Hager’s Farm Market</a>
                       </Grid>
                     </Grid>
                 },
@@ -41,41 +45,55 @@ const PublicPage = () => (
                     <Grid container>
                       <Grid item xs={12} sm={6} className="tour-jm">
                         <span className="tour-name">Juggler Meadow</span>
-                        <a href="https://maps.app.goo.gl/SvEM5o1xUNgDhnFs9">Historic Deerfield</a>
+                        <a className="tour-location" href="https://maps.app.goo.gl/SvEM5o1xUNgDhnFs9">Historic Deerfield</a>
                       </Grid>
                       <Grid item xs={12} sm={6} className="tour-wr">
                         <span className="tour-name">Wake Robin</span>
-                        <a href="https://maps.app.goo.gl/GTcx5CfNQg83a7EJ8">West County Cider</a>
+                        <a className="tour-location" href="https://maps.app.goo.gl/GTcx5CfNQg83a7EJ8">West County Cider</a>
                       </Grid>
                     </Grid>
                 },
-                { time: "3pm", label: "Ashfield Fall Festival" },
+                {
+                  time: "3pm", label: "Ashfield Fall Festival"
+                },
               ]}
             />
             <ScheduleDay
-              day="Sunday, October 11"
+              day="Sunday"
+              date="10/11"
               events={[
-                { time: "10:30am", label: "Three Sisters Sanctuary" },
+                { time: "10:30am", label: <a href="https://maps.app.goo.gl/Rgjn7aQFCnyzD2CfA">Three Sisters Sanctuary</a> },
                 {
-                  time: "11:45am", label: "Second Stand", description:
+                  time: "11:45am", label: "First Stand", description:
                     <Grid container>
                       <Grid item xs={12} sm={6} className="tour-jm">
                         <span className="tour-name">Juggler Meadow</span>
-                        <a href="https://maps.app.goo.gl/SvEM5o1xUNgDhnFs9">Glacial Potholes</a>
+                        <div className="tour-teams">Westerly · Rock Creek · Marlboro M</div>
+                        <span className="tour-location">Glacial Potholes, Town of Shelburne</span>
                       </Grid>
                       <Grid item xs={12} sm={6} className="tour-wr">
                         <span className="tour-name">Wake Robin</span>
-                        <a href="https://maps.app.goo.gl/E1ysuuaSgDDzQhpA9">Trolley Museum</a>
+                        <div className="tour-teams">Jack in the Green · Firebird</div>
+                        <span className="tour-location">Bridge of Flowers, Buckland</span>
                       </Grid>
                     </Grid>
                 },
-                { time: "3p", label: "Wilder Farm Sampler" },
+                {
+                  time: "12:20pm", label: "Second Stand", description:
+                    <Grid container>
+                      <Grid item xs={12} sm={6} className="tour-jm">
+                        <span className="tour-name">Juggler Meadow</span>
+                        <span className="tour-location">Bridge of Flowers, Buckland</span>
+                      </Grid>
+                      <Grid item xs={12} sm={6} className="tour-wr">
+                        <span className="tour-name">Wake Robin</span>
+                        <span className="tour-location">Glacial Potholes, Shelburne</span>
+                      </Grid>
+                    </Grid>
+                },
+                { time: "3pm", label: <a href="https://maps.app.goo.gl/6Z1xKSu4GZjZR24S6">Wilder Farm Sampler</a> },
               ]}
-            /> */}
-
-            <Box className="question" sx={{ mt: 3 }}>Schedule</Box>
-            {/* Replace with actual team list */}
-            <Box>Schedule coming soon.</Box>
+            />
 
             <Box className="question" sx={{ mt: 3 }}>Participating Teams</Box>
             {/* Replace with actual team list */}

@@ -183,7 +183,7 @@ body:has(.not_home) {
   border-radius: 3px;
 }
 
-@media (min-width: 750px) {
+@media (min-width: 600px) {
   .header {
     height: 120px;
     display: flex;
@@ -211,7 +211,7 @@ body:has(.not_home) {
   }
 }
 
-@media (max-width: 750px) {
+@media (max-width: 600px) {
   .header {
     height: 90px;
     display: flex;
@@ -475,13 +475,51 @@ body:has(.not_home) {
   line-height: 1.6;
 }
 
-/* Mobile: stack tour columns */
-@media (max-width: 750px) {
+.tour-location {
+  display: block;
+  margin-top: 0.4rem;
+  font-size: 1.1rem;
+  font-weight: 700;
+}
+
+.tour-location a {
+  text-decoration-thickness: 1px;
+  text-underline-offset: 3px;
+}
+
+.tour-jm .tour-location,
+.tour-jm .tour-location a {
+  color: #c8942a;
+  text-decoration-color: rgba(200, 148, 42, 0.55);
+}
+
+.tour-wr .tour-location,
+.tour-wr .tour-location a {
+  color: #5a8a4a;
+  text-decoration-color: rgba(90, 138, 74, 0.55);
+}
+
+.tour-location::before {
+  content: "📍";
+  font-size: 0.85em;
+  margin-right: 0.35em;
+}
+
+/* Mobile: stack tour columns, group titles shown at every stand */
+@media (max-width: 600px) {
   .schedule-description .MuiGrid-container {
     grid-template-columns: 1fr;
   }
   .schedule-description {
     padding-left: 0;
+  }
+}
+
+/* Desktop/tablet: after the day's first stand, drop the repeated group
+   title and let the amber/green column border carry the identity */
+@media (min-width: 600px) {
+  .schedule-day-items .schedule-item:has(.tour-jm) ~ .schedule-item:has(.tour-jm) .tour-name {
+    display: none;
   }
 }
 
@@ -513,7 +551,7 @@ body:has(.not_home) {
   line-height: 1.5;
 }
 
-@media (max-width: 750px) {
+@media (max-width: 600px) {
   .readable-background {
     padding: 0;
     margin-top: 1rem;

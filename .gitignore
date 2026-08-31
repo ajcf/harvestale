@@ -20,11 +20,11 @@ log.txt
 .env.test.local
 .env.production.local
 
-/gifs/*
 
 npm-debug.log*
 yarn-debug.log*
 yarn-error.log*
 
-# prevent overwriting RSVPs
-server/message.txt
+# claude
+.superpowers*
+

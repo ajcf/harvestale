@@ -11,16 +11,16 @@ import Logout from "@mui/icons-material/Logout";
 
 const styles = (theme) => ({
   root: {
-    [theme.breakpoints.down(750)]: {
+    [theme.breakpoints.down(600)]: {
       position: "absolute",
       left: "0",
     },
-    [theme.breakpoints.up(750)]: {
+    [theme.breakpoints.up(600)]: {
       width: "100%",
     },
   },
   buttonBar: {
-    [theme.breakpoints.down(750)]: {
+    [theme.breakpoints.down(600)]: {
       display: "none",
     },
     margin: "10px 0",

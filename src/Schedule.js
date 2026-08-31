@@ -26,38 +26,44 @@ const Schedule = () => (
         date="10/10"
         events={[
           { time: "8:15am-9:30am", label: "Breakfast" },
-          { time: "9am", label: "Squires Meeting" },
+          { time: "9:30am", label: "Squires Meeting" },
           { time: "10am", label: "Leave Camp" },
-          { label: "Tours and lunch, exact stands TBD" },
-          // {
-          //   time: "10:30am", label: "First Stand", description:
-          //     <Grid container>
-          //       <Grid item xs={12} sm={6} className="tour-jm">
-          //         <span className="tour-name">Juggler Meadow</span>
-          //         {/* <div className="tour-teams">Ring O’Bells · Ragged Robin · Jack in the Green</div> */}
-          //         <a href="https://maps.app.goo.gl/eCw7iMPkAdpZL67f7">Mt Sugarloaf</a>
-          //       </Grid>
-          //       <Grid item xs={12} sm={6} className="tour-wr">
-          //         <span className="tour-name">Wake Robin</span>
-          //         {/* <div className="tour-teams">Handsome Molly · Midnight Capers · Newtowne</div> */}
-          //         <a href="https://maps.app.goo.gl/vuMTamiYgKfTiUxZ9">Hager’s Farm Market</a>
-          //       </Grid>
-          //     </Grid>
-          // },
-          // {
-          //   time: "11:30am", label: "Second Stand", description:
-          //     <Grid container>
-          //       <Grid item xs={12} sm={6} className="tour-jm">
-          //         <span className="tour-name">Juggler Meadow</span>
-          //         <a href="https://maps.app.goo.gl/SvEM5o1xUNgDhnFs9">Historic Deerfield</a>
-          //       </Grid>
-          //       <Grid item xs={12} sm={6} className="tour-wr">
-          //         <span className="tour-name">Wake Robin</span>
-          //         <a href="https://maps.app.goo.gl/GTcx5CfNQg83a7EJ8">West County Cider</a>
-          //       </Grid>
-          //     </Grid>
-          // },
-          // { time: "1pm", label: "Lunch at Camp Apex" },
+          {
+            time: "10:30am", label: "First Stand", description:
+              <Grid container>
+                <Grid item xs={12} sm={6} className="tour-jm">
+                  <span className="tour-name">Juggler Meadow</span>
+                  <div className="tour-teams">Firebird · Jack in the Green</div>
+                  <a className="tour-location" href="https://maps.app.goo.gl/eCw7iMPkAdpZL67f7">Mt Sugarloaf</a>
+                </Grid>
+                <Grid item xs={12} sm={6} className="tour-wr">
+                  <span className="tour-name">Wake Robin</span>
+                  <div className="tour-teams">Westerly · Rock Creek · Marlboro M</div>
+                  <a className="tour-location" href="https://maps.app.goo.gl/vuMTamiYgKfTiUxZ9">Hager’s Farm Market</a>
+                </Grid>
+              </Grid>
+          },
+          {
+            time: "11:30am", label: "Second Stand", description:
+              <Grid container>
+                <Grid item xs={12} sm={6} className="tour-jm">
+                  <span className="tour-name">Juggler Meadow</span>
+                  <a className="tour-location" href="https://maps.app.goo.gl/SvEM5o1xUNgDhnFs9">Historic Deerfield</a>
+                </Grid>
+                <Grid item xs={12} sm={6} className="tour-wr">
+                  <span className="tour-name">Wake Robin</span>
+                  <a className="tour-location" href="https://maps.app.goo.gl/GTcx5CfNQg83a7EJ8">West County Cider</a>
+                </Grid>
+              </Grid>
+          },
+          {
+            time: "1pm", label: "Lunch", description:
+              <Grid container>
+                <Grid item xs={12} sm={12}>
+                  <a href="https://maps.app.goo.gl/e6tF6Dbtt896oSYy7">Polish American Club</a>
+                </Grid>
+              </Grid>
+          },
           {
             time: "3pm", label: "Ashfield Fall Festival", description:
               <div>
@@ -67,37 +73,50 @@ const Schedule = () => (
           },
           { time: "6pm", label: "Cocktail Hour" },
           { time: "7pm", label: "Feast and Festivities" },
-          // { time: "9pm", label: "Contradance" }
+          { time: "9pm", label: "Contradance" }
         ]}
       />
       <ScheduleDay
         day="Sunday"
         date="10/11"
         events={[
-          { time: "8:00am - 9:00am", label: "Breakfast" },
-          { time: "9am", label: "Squires Meeting" },
+          { time: "8:00am - 9:30am", label: "Breakfast" },
+          { time: "9:15am", label: "Squires Meeting" },
           { time: "9:45am", label: "Leave Camp" },
-          { label: "Tours and lunch, exact stands TBD" },
-          // { time: "10:30am", label: <a href="https://maps.app.goo.gl/Rgjn7aQFCnyzD2CfA">Three Sisters Sanctuary</a> },
-          // {
-          //   time: "11:45am", label: <a href="https://maps.app.goo.gl/E1ysuuaSgDDzQhpA9">Trolley Museum</a>, description:
-          //     <Grid container>
-          //       <Grid item xs={12} sm={6} className="tour-jm">
-          //         <span className="tour-name">Juggler Meadow</span>
-          //         {/* <div className="tour-teams">Handsome Molly · Midnight Capers · Newtowne</div> */}
-          //         Glacial Potholes (park at <a href="https://maps.app.goo.gl/E1ysuuaSgDDzQhpA9">Trolley Museum</a>)
-          //       </Grid>
-          //       <Grid item xs={12} sm={6} className="tour-wr">
-          //         <span className="tour-name">Wake Robin</span>
-          //         {/* <div className="tour-teams">Ring O’Bells · Ragged Robin · Jack in the Green</div> */}
-          //         <a href="https://maps.app.goo.gl/E1ysuuaSgDDzQhpA9">Trolley Museum</a>
-          //       </Grid>
-          //     </Grid>
-          // },
-          // { time: "12:30pm", label: "Singing at the Trolley Museum" },
-          // { time: "1:00pm", label: "Lunch at Camp Apex" },
+          { time: "10:30am", label: <a href="https://maps.app.goo.gl/Rgjn7aQFCnyzD2CfA">Three Sisters Sanctuary</a> },
+          {
+            time: "11:45am", label: "First Stand", description:
+              <Grid container>
+                <Grid item xs={12} sm={6} className="tour-jm">
+                  <span className="tour-name">Juggler Meadow</span>
+                  <div className="tour-teams">Westerly · Rock Creek · Marlboro M</div>
+                  <span className="tour-location">Glacial Potholes, Town of Shelburne</span>
+                </Grid>
+                <Grid item xs={12} sm={6} className="tour-wr">
+                  <span className="tour-name">Wake Robin</span>
+                  <div className="tour-teams">Jack in the Green · Firebird</div>
+                  <span className="tour-location">Bridge of Flowers, Buckland</span>
+                </Grid>
+              </Grid>
+          },
+          {
+            time: "12:20pm", label: "Second Stand", description:
+              <Grid container>
+                <Grid item xs={12} sm={6} className="tour-jm">
+                  <span className="tour-name">Juggler Meadow</span>
+                  <div className="tour-teams">Westerly · Rock Creek · Marlboro M</div>
+                  <span className="tour-location">Bridge of Flowers, Buckland</span>
+                </Grid>
+                <Grid item xs={12} sm={6} className="tour-wr">
+                  <span className="tour-name">Wake Robin</span>
+                  <div className="tour-teams">Jack in the Green · Firebird</div>
+                  <span className="tour-location">Glacial Potholes, Shelburne</span>
+                </Grid>
+              </Grid>
+          },
+          { time: "1:00pm", label: <span>Lunch at the <a href="https://maps.app.goo.gl/E1ysuuaSgDDzQhpA9">Trolley Museum</a></span> },
           { time: "3pm", label: <a href="https://maps.app.goo.gl/6Z1xKSu4GZjZR24S6">Wilder Farm Sampler</a> },
-          { time: "6pm", label: "Dinner at camp" },
+          { time: "7pm", label: "Dinner at camp" },
         ]}
       />
       <ScheduleDay

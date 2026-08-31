@@ -5,7 +5,7 @@ import { Close, Menu  as MenuIcon } from "@mui/icons-material";
 
 const styles = theme => ({
   buttonCollapse: {
-    [theme.breakpoints.up(750)]: {
+    [theme.breakpoints.up(600)]: {
       display: "none"
     },
   },
