@@ -4,7 +4,7 @@ import { ReadableAppPage } from "./Components/AppPage";
 import ScheduleDay from "./Components/ScheduleDay";
 
 const Schedule = () => (
-  <ReadableAppPage includeHeader currentPage="Schedule">
+  <ReadableAppPage includeHeader currentPage="Schedule" wide>
     <div className="schedule-date">October 9-12, 2026</div>
     <p className="schedule-location">
       <a href="https://maps.app.goo.gl/kJKiUn8JAoJPTT4n7" target="_blank" rel="noreferrer">
@@ -29,7 +29,7 @@ const Schedule = () => (
           { time: "9:30am", label: "Squires Meeting" },
           { time: "10am", label: "Leave Camp" },
           {
-            time: "10:30am", label: "First Stand", description:
+            time: "10:30am", description:
               <Grid container>
                 <Grid item xs={12} sm={6} className="tour-jm">
                   <span className="tour-name">Juggler Meadow</span>
@@ -44,7 +44,7 @@ const Schedule = () => (
               </Grid>
           },
           {
-            time: "11:30am", label: "Second Stand", description:
+            time: "11:30am", description:
               <Grid container>
                 <Grid item xs={12} sm={6} className="tour-jm">
                   <span className="tour-name">Juggler Meadow</span>
@@ -58,16 +58,21 @@ const Schedule = () => (
           },
           {
             time: "1pm", label: "Lunch", description:
-              <Grid container>
-                <Grid item xs={12} sm={12}>
+              <div>
+                <span className="tour-location">
                   <a href="https://maps.app.goo.gl/e6tF6Dbtt896oSYy7">Polish American Club</a>
-                </Grid>
-              </Grid>
+                </span>
+              </div>
           },
           {
             time: "3pm", label: "Ashfield Fall Festival", description:
               <div>
-                Festival is on <a href="https://maps.app.goo.gl/cDhYV8yVJTMCFhgc6">Ashfield Common</a><br />
+                <span className="tour-location">
+                  <a href="https://maps.app.goo.gl/cDhYV8yVJTMCFhgc6">
+                    Ashfield Common
+                  </a>
+                </span>
+                {/* Festival is on <a href="">Ashfield Common</a><br /> */}
                 Park in the <a href="https://maps.app.goo.gl/fWUtek5S5c5DBRx48">tennis court lot</a> and process in.
               </div>
           },
@@ -85,36 +90,50 @@ const Schedule = () => (
           { time: "9:45am", label: "Leave Camp" },
           { time: "10:30am", label: <a href="https://maps.app.goo.gl/Rgjn7aQFCnyzD2CfA">Three Sisters Sanctuary</a> },
           {
-            time: "11:45am", label: "First Stand", description:
+            time: "11:45am", description:
               <Grid container>
                 <Grid item xs={12} sm={6} className="tour-jm">
                   <span className="tour-name">Juggler Meadow</span>
                   <div className="tour-teams">Westerly · Rock Creek · Marlboro M</div>
-                  <span className="tour-location">Glacial Potholes, Town of Shelburne</span>
+                  <span className="tour-location"><a href="https://maps.app.goo.gl/qndWopdUPgPxgVK97">
+                    Shelburne Falls Potholes
+                  </a></span>
                 </Grid>
                 <Grid item xs={12} sm={6} className="tour-wr">
                   <span className="tour-name">Wake Robin</span>
                   <div className="tour-teams">Jack in the Green · Firebird</div>
-                  <span className="tour-location">Bridge of Flowers, Buckland</span>
+                  <span className="tour-location">
+                    <a href="https://maps.app.goo.gl/cZMKMLQ8rW1xwtTw8">
+                      Bridge of Flowers
+                    </a>(Buckland side)</span>
                 </Grid>
               </Grid>
           },
           {
-            time: "12:20pm", label: "Second Stand", description:
+            time: "12:20pm", description:
               <Grid container>
                 <Grid item xs={12} sm={6} className="tour-jm">
                   <span className="tour-name">Juggler Meadow</span>
-                  <div className="tour-teams">Westerly · Rock Creek · Marlboro M</div>
-                  <span className="tour-location">Bridge of Flowers, Buckland</span>
+                  <span className="tour-location">
+                    <a href="https://maps.app.goo.gl/cZMKMLQ8rW1xwtTw8">
+                      Bridge of Flowers
+                    </a> (Buckland side)</span>
                 </Grid>
                 <Grid item xs={12} sm={6} className="tour-wr">
                   <span className="tour-name">Wake Robin</span>
-                  <div className="tour-teams">Jack in the Green · Firebird</div>
-                  <span className="tour-location">Glacial Potholes, Shelburne</span>
+                  <span className="tour-location"><a href="https://maps.app.goo.gl/qndWopdUPgPxgVK97">
+                    Shelburne Falls Potholes
+                  </a></span>
                 </Grid>
               </Grid>
           },
-          { time: "1:00pm", label: <span>Lunch at the <a href="https://maps.app.goo.gl/E1ysuuaSgDDzQhpA9">Trolley Museum</a></span> },
+          {
+            time: "1:00pm", label: "Lunch", description:
+              <span class="tour-location">
+                <a href="https://maps.app.goo.gl/E1ysuuaSgDDzQhpA9">
+                  Trolley Museum
+                </a></span>
+          },
           { time: "3pm", label: <a href="https://maps.app.goo.gl/6Z1xKSu4GZjZR24S6">Wilder Farm Sampler</a> },
           { time: "7pm", label: "Dinner at camp" },
         ]}

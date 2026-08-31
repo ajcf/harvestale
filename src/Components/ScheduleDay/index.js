@@ -7,9 +7,9 @@ const ScheduleDay = (props) => (
       <div className="schedule-day-rule" />
     </div>
     <div className="schedule-day-items">
-      {props.events.map((child) => (
+      {props.events.map((child, index) => (
         <ScheduleItem
-          key={child.label + "-" + child.time}
+          key={index}
           label={child.label}
           time={child.time}
           description={child.description}

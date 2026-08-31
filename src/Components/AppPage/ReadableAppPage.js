@@ -6,6 +6,7 @@ const ReadableAppPage = (props) => (
     includeHeader={props.includeHeader}
     currentPage={props.currentPage}
     className="not_home"
+    wide={props.wide}
   >
     {/* <div className="background">
       <img

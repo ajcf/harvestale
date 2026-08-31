@@ -8,7 +8,7 @@ const AppPage = (props) => (
     <div className={props.className ?? ""}>
       {props.includeHeader && <Header currentPage={props.currentPage} /> }
       <div className={`content-wrapper${props.includeHeader ? ' content-wrapper-with-nav' : ''}`}>
-        <Container className="homebody">
+        <Container className={`homebody${props.wide ? ' homebody--wide' : ''}`}>
           {props.children}
         </Container>
       </div>

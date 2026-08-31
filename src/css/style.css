@@ -100,6 +100,13 @@ body:has(.not_home) {
   padding: 1.5rem 1rem !important;
 }
 
+/* Wider content column for pages whose schedule grid needs the extra
+   room; opted into per-page rather than raised globally so prose-heavy
+   pages (Information, FAQ) keep their narrower, more readable width. */
+.homebody--wide {
+  max-width: 960px !important;
+}
+
 .homeButtons {
   min-width: 100%;
   overflow: visible;
@@ -130,7 +137,6 @@ body:has(.not_home) {
   margin: 2rem auto;
   padding: 0 1rem;
   width: 100%;
-  max-width: 720px;
   min-height: calc(80dvh - 224px);
 }
 
@@ -313,7 +319,8 @@ body:has(.not_home) {
   font-size: 1.1rem;
   color: #4a3825;
   line-height: 1.8;
-  margin-bottom: 2rem;
+  max-width: 720px;
+  margin: 0 auto 2rem;
   border-left: 3px solid #e0c070;
   padding-left: 1.1rem;
 }
@@ -428,6 +435,18 @@ body:has(.not_home) {
   padding-left: 6rem;
 }
 
+/* Unlabeled stand: time sits inline beside the description instead of
+   stacking under an empty label row */
+.schedule-item-row--inline {
+  align-items: flex-start;
+}
+
+.schedule-item-row--inline .schedule-description {
+  margin: 0;
+  padding-left: 0;
+  flex: 1;
+}
+
 /* ── TOUR SPLIT ── */
 .schedule-description .MuiGrid-container {
   display: grid;
@@ -435,18 +454,14 @@ body:has(.not_home) {
   gap: 0.75rem;
 }
 
+/* Flex column + gap (rather than per-element margins) so spacing only
+   ever appears between elements that actually render — a hidden
+   .tour-name or a missing .tour-teams doesn't leave behind a gap */
 .schedule-description .tour-jm,
 .schedule-description .tour-wr {
-  border-top: 2.5px solid;
-  padding-top: 0.45rem;
-}
-
-.schedule-description .tour-jm {
-  border-color: #c8942a;
-}
-
-.schedule-description .tour-wr {
-  border-color: #5a8a4a;
+  display: flex;
+  flex-direction: column;
+  gap: 0.4rem;
 }
 
 .tour-jm .tour-name {
@@ -455,8 +470,6 @@ body:has(.not_home) {
   letter-spacing: 0.12em;
   text-transform: uppercase;
   color: #c8942a;
-  margin-bottom: 0.4rem;
-  display: block;
 }
 
 .tour-wr .tour-name {
@@ -465,8 +478,6 @@ body:has(.not_home) {
   letter-spacing: 0.12em;
   text-transform: uppercase;
   color: #5a8a4a;
-  margin-bottom: 0.4rem;
-  display: block;
 }
 
 .tour-teams {
@@ -477,7 +488,6 @@ body:has(.not_home) {
 
 .tour-location {
   display: block;
-  margin-top: 0.4rem;
   font-size: 1.1rem;
   font-weight: 700;
 }
@@ -497,12 +507,6 @@ body:has(.not_home) {
 .tour-wr .tour-location a {
   color: #5a8a4a;
   text-decoration-color: rgba(90, 138, 74, 0.55);
-}
-
-.tour-location::before {
-  content: "📍";
-  font-size: 0.85em;
-  margin-right: 0.35em;
 }
 
 /* Mobile: stack tour columns, group titles shown at every stand */

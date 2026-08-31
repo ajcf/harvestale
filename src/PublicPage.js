@@ -10,7 +10,7 @@ const PublicPage = () => (
     <div className="not_home">
       <PublicHeader />
       <div className="content-wrapper">
-        <Container className="homebody">
+        <Container className="homebody homebody--wide">
           <Box className="readable-background">
             <p className="intro">
               For four decades and counting, Juggler Meadow and Wake Robin Morris have welcomed the fall
@@ -19,14 +19,14 @@ const PublicPage = () => (
               the harvest with ringing bells and clashing sticks!
             </p>
 
-            <Box className="question" sx={{ mt: 3 }}>Schedule</Box>
+            {/* <Box className="question" sx={{ mt: 3 }}>Schedule</Box> */}
 
             <ScheduleDay
               day="Saturday"
               date="10/10"
               events={[
                 {
-                  time: "10:30am", label: "First Stand", description:
+                  time: "10:30am", description:
                     <Grid container>
                       <Grid item xs={12} sm={6} className="tour-jm">
                         <span className="tour-name">Juggler Meadow</span>
@@ -41,7 +41,7 @@ const PublicPage = () => (
                     </Grid>
                 },
                 {
-                  time: "11:30am", label: "Second Stand", description:
+                  time: "11:30am", description:
                     <Grid container>
                       <Grid item xs={12} sm={6} className="tour-jm">
                         <span className="tour-name">Juggler Meadow</span>
@@ -64,30 +64,40 @@ const PublicPage = () => (
               events={[
                 { time: "10:30am", label: <a href="https://maps.app.goo.gl/Rgjn7aQFCnyzD2CfA">Three Sisters Sanctuary</a> },
                 {
-                  time: "11:45am", label: "First Stand", description:
+                  time: "11:45am", description:
                     <Grid container>
                       <Grid item xs={12} sm={6} className="tour-jm">
                         <span className="tour-name">Juggler Meadow</span>
                         <div className="tour-teams">Westerly · Rock Creek · Marlboro M</div>
-                        <span className="tour-location">Glacial Potholes, Town of Shelburne</span>
+                        <span className="tour-location"><a href="https://maps.app.goo.gl/qndWopdUPgPxgVK97">
+                          Shelburne Falls Potholes
+                        </a></span>
                       </Grid>
                       <Grid item xs={12} sm={6} className="tour-wr">
                         <span className="tour-name">Wake Robin</span>
                         <div className="tour-teams">Jack in the Green · Firebird</div>
-                        <span className="tour-location">Bridge of Flowers, Buckland</span>
+                        <span className="tour-location">
+                          <a href="https://maps.app.goo.gl/cZMKMLQ8rW1xwtTw8">
+                            Bridge of Flowers
+                          </a> (Buckland side)</span>
                       </Grid>
                     </Grid>
                 },
                 {
-                  time: "12:20pm", label: "Second Stand", description:
+                  time: "12:20pm", description:
                     <Grid container>
                       <Grid item xs={12} sm={6} className="tour-jm">
                         <span className="tour-name">Juggler Meadow</span>
-                        <span className="tour-location">Bridge of Flowers, Buckland</span>
+                        <span className="tour-location">
+                          <a href="https://maps.app.goo.gl/cZMKMLQ8rW1xwtTw8">
+                            Bridge of Flowers
+                          </a> (Buckland side)</span>
                       </Grid>
                       <Grid item xs={12} sm={6} className="tour-wr">
                         <span className="tour-name">Wake Robin</span>
-                        <span className="tour-location">Glacial Potholes, Shelburne</span>
+                        <span className="tour-location"><a href="https://maps.app.goo.gl/qndWopdUPgPxgVK97">
+                          Shelburne Falls Potholes
+                        </a></span>
                       </Grid>
                     </Grid>
                 },
@@ -95,9 +105,8 @@ const PublicPage = () => (
               ]}
             />
 
-            <Box className="question" sx={{ mt: 3 }}>Participating Teams</Box>
-            {/* Replace with actual team list */}
-            <Box>Team information coming soon.</Box>
+            {/* <Box className="question" sx={{ mt: 3 }}>Participating Teams</Box>
+            <Box>Team information coming soon.</Box> */}
           </Box>
         </Container>
       </div>
