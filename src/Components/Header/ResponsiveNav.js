@@ -31,7 +31,6 @@ const styles = (theme) => ({
     display: "flex",
     flexDirection: "row",
     justifyContent: "space-around",
-    borderBottom: "solid 1px #e8d8a0",
   },
   btn: {
     marginLeft: theme.spacing(1),
@@ -52,7 +51,7 @@ class ResponsiveNav extends Component {
     return (
       <Button
         key={path}
-        className={classes.btn}
+        className={`${classes.btn} nav-link`}
         component={RouterLink}
         startIcon={icon}
         variant="text"

@@ -23,7 +23,7 @@ const PublicPage = () => (
 
             <ScheduleDay
               day="Saturday"
-              date="10/10"
+              date="October 10"
               events={[
                 {
                   time: "10:30am", description:
@@ -60,7 +60,7 @@ const PublicPage = () => (
             />
             <ScheduleDay
               day="Sunday"
-              date="10/11"
+              date="October 11"
               events={[
                 { time: "10:30am", label: <a href="https://maps.app.goo.gl/Rgjn7aQFCnyzD2CfA">Three Sisters Sanctuary</a> },
                 {

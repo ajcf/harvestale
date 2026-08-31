@@ -60,6 +60,12 @@ body:has(.not_home) {
 .not_home a:hover {
   text-decoration-color: rgba(90, 138, 74, 0.9);
 }
+
+/* Nav links use their own active/hover styling (color, bold, bottom
+   border) instead of the body-copy underline treatment */
+.not_home .nav-link {
+  text-decoration: none;
+}
 .not_home .background {
   position: absolute;
   min-height: calc(100vh - 57px);
@@ -371,6 +377,13 @@ body:has(.not_home) {
   font-weight: normal;
   color: #8c671d;
   letter-spacing: 0.05em;
+  white-space: nowrap;
+}
+
+.schedule-day-date {
+  font-family: 'Podkova';
+  font-size: 1rem;
+  color: #7a6040;
   white-space: nowrap;
 }
 

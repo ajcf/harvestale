@@ -16,14 +16,14 @@ const Schedule = () => (
     <Box sx={{ flexGrow: 1 }}>
       <ScheduleDay
         day="Friday"
-        date="10/9"
+        date="October 9"
         events={[
           { time: "5pm", label: "Camp Opens", description: "Potluck dinner will be provided by local teams" }
         ]}
       />
       <ScheduleDay
         day="Saturday"
-        date="10/10"
+        date="October 10"
         events={[
           { time: "8:15am-9:30am", label: "Breakfast" },
           { time: "9:30am", label: "Squires Meeting" },
@@ -83,7 +83,7 @@ const Schedule = () => (
       />
       <ScheduleDay
         day="Sunday"
-        date="10/11"
+        date="October 11"
         events={[
           { time: "8:00am - 9:30am", label: "Breakfast" },
           { time: "9:15am", label: "Squires Meeting" },
@@ -140,7 +140,7 @@ const Schedule = () => (
       />
       <ScheduleDay
         day="Monday"
-        date="10/12"
+        date="October 12"
         events={[
           { time: "8:15am", label: "Breakfast" },
         ]}
