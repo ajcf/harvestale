@@ -1,0 +1,8 @@
+# Copy this file to deploy.config.local and fill in real values.
+# deploy.config.local is gitignored (matches the *.local rule) — it's never committed.
+
+AWS_S3_BUCKET=your-bucket-name
+AWS_CLOUDFRONT_DISTRIBUTION_ID=YOUR_DISTRIBUTION_ID
+
+# Optional: uncomment if you use a named AWS CLI profile instead of default credentials
+# AWS_PROFILE=your-profile-name
